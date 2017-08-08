@@ -407,7 +407,7 @@
     			<div class="strip_all_tour_list wow fadeIn animated" data-wow-delay="0.1s">
                    <div class="row">
                 	<div class="col-lg-4 col-md-4 col-sm-4">                        
-                    	<div class="img_list"><a href="single_tour.html"><div class="ribbon popular"></div><img src="images/tour/tour_img4.jpg" alt="">
+                    	<div class="img_list"><a href="{{route('single-tour')}}"><div class="ribbon popular"></div><img src="images/tour/tour_img4.jpg" alt="">
                         </a>
                         </div>
                     </div>
@@ -1339,7 +1339,7 @@
 										</div> <!-- End .post_history -->
 
 										<p>There are many variations of passages available but the majority have  in the some form... </p>
-										<a href="blog-post.html" class="transition3s">Continue Reading</a>
+										<a href="{{route('blog-post')}}" class="transition3s">Continue Reading</a>
 									</div> <!-- End .post -->
 								</div> <!-- End .single_news_item -->
 							</div>

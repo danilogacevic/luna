@@ -11,15 +11,26 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/home', function () {
+    return view('home');
+})->middleware('admin');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')->name('index');
+Route::get('/blog-post',['as'=>'blog-post','uses'=>'HomeController@single_post']);
+Route::get('/single-tour', 'HomeController@single_tour')->name('single-tour');
 
-Route::get('/luna',function(){
+// Route::get('/luna',function(){
 
-	return view('index');
+// 	return view('index');
+// });
+
+Route::get('/admin',function (){
+
+	return view('backlayout.app');
 });
+
+// Route::resource('/admin/users','AdminUsersController');
+Route::resource('/admin/posts','PostsController');
+Route::resource('/admin/categories','CategoriesController');

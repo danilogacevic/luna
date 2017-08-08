@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>MyTrip Travel Agency</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Travel Company">
+    <meta name="author" content="Hitesh Jariwla">
+   <!-- Standard Favicon-->
+    <link rel="shortcut icon" href="{{asset('images/favicon.ico')}}">   
+    
+	<link rel="stylesheet" href="{{asset('css/template.css')}}">    
+   
+
+    <!-- Google Web Fonts-->        
+	<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+	<!-- Google Fonts End -->
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status">
+        </div>
+    </div>
+    <!-- Header : starts -->
+    <header class="header-wrapper">
+		<!-- Logo -->
+		<div class="logo-wrap float-left">
+			<div class="vertical-align">
+				<a href="#">
+					<img class="logo text-left" src="images/logo.png" alt="logo">
+				</a>
+			</div>
+		</div>
+		<!-- Menu Section : starts -->
+		<nav id="baseImage" class="menu-container main-home-menu float-left">
+			<ul class="menu">
+				<li class="main-menu-item"><a class="scroll" href="/#home">Home</a></li>
+				<li class="main-menu-item"><a class="scroll" href="/#about">About</a></li>
+                <li class="main-menu-item"><a class="scroll" href="index.html#services">Services</a></li>
+				<li class="main-menu-item"><a class="scroll" href="index.html#packages">Packages</a></li>
+				<li class="main-menu-item"><a class="scroll" href="index.html#gallery">Gallery</a></li>
+				<li class="main-menu-item"><a class="scroll" href="index.html#deals">Hot Deals</a></li>				
+				<li class="main-menu-item"><a class="scroll" href="index.html#blog">Blog</a></li>				
+				<li class="main-menu-item"><a class="scroll" href="index.html#contact">Contact</a></li>
+			</ul>
+		</nav>
+		<!-- Menu Section : ends -->
+		<!-- Header Content Block : starts -->
+		<div class="header-content-block float-left">
+			<div class="vertical-align">
+				<div class="social-icons text-right">
+					<ul>
+						<li><a href="#"><i class="ion-social-facebook"></i></a></li>
+						<li><a href="#"><i class="ion-social-twitter"></i></a></li>
+						<li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+					</ul>
+				</div>
+				<!-- Mobile Menu Trigger -->
+				<div class="mobile-nav-container text-right">
+					<div class="mobile-nav">
+						<span></span>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		<!-- Header Content Block : ends -->
+	</header>
+    <!-- Header : ends -->
+    <!-- Master Wrap : starts -->
+    <section id="master-wrap" class="master-wrap">
+		<section id="inner-page-header" class="inner-page-header standard-blog-post text-left pad-top pad-bottom">
+			<div class="inner-page-header-overlay">
+				<!-- Container : starts -->
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h1 class="page-title white">Arch Triomphe tour</h1>
+							<p class="page-sub-title white">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+						</div>
+					</div>
+				</div>
+				<!-- Container : ends -->
+			</div>
+		</section>
+		<section class="light-grey-bg pad-min-top-half pad-min-bottom-half">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+						<div class="tour-post-details text-left">
+							<p><a class="inner-page-navigation dark-grey" href="#">6 Days / 5 Nights</a> &nbsp; | &nbsp;</p>
+							<p class="dark-grey">May 04, 2016 &nbsp; | &nbsp;</p>							
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<div class="tour-post-path text-right">
+							<p><a class="inner-page-navigation dark-grey" href="#">Home</a> /
+							<a class="inner-page-navigation dark-grey" href="#">Tour</a> /
+							<a class="inner-page-navigation dark-grey" href="#">Tour Details</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="tour-page-content pad-top pad-bottom white-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-sm-8">						
+						<div class="row">
+							<div class="col-md-12">								
+								<p class="add-min-top-quarter dark-grey">
+								<b>Day 1 </b>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+								<p class="add-min-top-quarter dark-grey">
+								<b>Day 2 </b>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+                                <p class="add-min-top-quarter dark-grey">
+								<b>Day 3 </b>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+                                <p class="add-min-top-quarter dark-grey">
+								<b>Day 4 </b>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+                                <p class="add-min-top-quarter dark-grey">
+								<b>Day 5 </b>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+                                <p class="add-min-top-quarter dark-grey">
+								<b>Day 6 </b>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>                               
+                                <h4>What's include</h4>
+                                <p>
+						            Lorem ipsum dolor sit amet, at omnes deseruisse pri. Quo aeterno legimus insolens ad. Sit cu detraxit constituam, an mel iudico constituto efficiendi.
+					            </p>
+                                <div class="row">
+						<div class="col-md-6 col-sm-6">
+							<ul class="list_ok">
+								<li>Lorem ipsum dolor sit amet</li>
+								<li>No scripta electram necessitatibus sit</li>
+								<li>Quidam percipitur instructior an eum</li>
+								<li>Ut est saepe munere ceteros</li>
+								<li>No scripta electram necessitatibus sit</li>
+								<li>Quidam percipitur instructior an eum</li>
+							</ul>
+						</div>
+						<div class="col-md-6 col-sm-6">
+							<ul class="list_ok">
+								<li>Lorem ipsum dolor sit amet</li>
+								<li>No scripta electram necessitatibus sit</li>
+								<li>Quidam percipitur instructior an eum</li>
+								<li>No scripta electram necessitatibus sit</li>
+							</ul>
+						</div>
+					</div>
+							</div>
+						</div>	
+						<!--Tour-post-Review : starts -->
+						<div id="tour-post-comments" class="tour-post-comments">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="comments">
+										<h4 class="sub-head dark-grey">Reviews</h4>
+										<ul class="commentlists">
+											<!-- Review One -->
+											<li class="comment">
+												<div>
+													<div class="avatarbox">
+														<img src="images/pages/blog-post/comments/1.jpg" class="img-responsive" alt="icon1" data-no-retina>
+													</div>
+													<div class="comment-info">
+														<span class="dark-grey">Michelle Jane &nbsp; | &nbsp;</span>
+														<span class="dark-grey">April 15, 2016</span>														
+													</div>
+													<p class="grey">So, I think this is a good theme and I want to use it for my travel blog. Thank you for the good design and coding. You are awesome guys ;)</p>
+												</div>
+											</li>
+
+											<!-- Comment Two -->
+											<li class="comment">
+												<div>
+													<div class="avatarbox">
+														<img src="images/pages/blog-post/comments/3.jpg" class="img-responsive" alt="icon3" data-no-retina>
+													</div>
+													<div class="comment-info">
+														<span class="dark-grey">Michelle Jane &nbsp; | &nbsp;</span>
+														<span class="dark-grey">April 15, 2016</span>														
+													</div>
+													<p class="grey">So, I think this is a good theme and I want to use it for my travel blog. Thank you for the good design and coding. You are awesome guys ;)</p>
+												</div>
+											</li>
+
+											<!-- Comment Three -->
+											<li class="comment">
+												<div>
+													<div class="avatarbox">
+														<img src="images/pages/blog-post/comments/4.jpg" class="img-responsive" alt="icon3" data-no-retina>
+													</div>
+													<div class="comment-info">
+														<span class="dark-grey">Michelle Jane &nbsp; | &nbsp;</span>
+														<span class="dark-grey">April 15, 2016</span>														
+													</div>
+													<p class="grey">So, I think this is a good theme and I want to use it for my travel blog. Thank you for the good design and coding. You are awesome guys ;)</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Tour Post Comments : ends -->
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="box_style_1 expose">
+			                    <h3 class="inner">- Booking -</h3>
+			                    <div class="row">
+				                    <div class="col-md-6 col-sm-6">
+					                    <div class="form-group">
+						                    <label><i class="icon-calendar-7"></i> Select a date</label>
+						                    <input class="date-pick form-control" data-date-format="M d, D" value="24/05/2016" type="text">
+					                    </div>
+				                    </div>
+				                    <div class="col-md-6 col-sm-6">
+					                    <div class="form-group">
+						                    <label><i class=" icon-clock"></i> Time</label>
+						                    <input class="time-pick form-control" value="12:00 AM" type="text">
+					                    </div>
+				                    </div>
+			                    </div>
+			                    <div class="row">
+				                    <div class="col-md-6 col-sm-6">
+					                    <div class="form-group">
+						                    <label>Adults</label>
+						                    <div class="numbers-row">
+							                    <input type="text" value="1" id="adults" class="qty2 form-control" name="quantity">
+						                    <div class="inc button_inc">+</div><div class="dec button_inc">-</div></div>
+					                    </div>
+				                    </div>
+				                    <div class="col-md-6 col-sm-6">
+					                    <div class="form-group">
+						                    <label>Children</label>
+						                    <div class="numbers-row">
+							                    <input type="text" value="0" id="children" class="qty2 form-control" name="quantity">
+						                    <div class="inc button_inc">+</div><div class="dec button_inc">-</div></div>
+					                    </div>
+				                    </div>
+			                    </div>
+			                    <br>
+			                    <table class="table table_summary">
+			                    <tbody>
+			                    <tr>
+				                    <td>
+					                    Adults
+				                    </td>
+				                    <td class="text-right">
+					                    2
+				                    </td>
+			                    </tr>
+			                    <tr>
+				                    <td>
+					                    Children
+				                    </td>
+				                    <td class="text-right">
+					                    0
+				                    </td>
+			                    </tr>
+			                    <tr>
+				                    <td>
+					                    Total amount
+				                    </td>
+				                    <td class="text-right">
+					                    3x $52
+				                    </td>
+			                    </tr>
+			                    <tr class="total">
+				                    <td>
+					                    Total cost
+				                    </td>
+				                    <td class="text-right">
+					                    $154
+				                    </td>
+			                    </tr>
+			                    </tbody>
+			                    </table>
+                                <div class="button-style-01-container add-min-top-half">
+												<button type="submit" name="submit" id="submit" class="button-style-01 white-button light-black">Book now</button>
+											</div>
+			                    <a class="button-style-01 white-button light-black" href="cart.html"></a>			                    
+		                    </div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Footer : starts -->
+		<section id="footer" class="footer container-fluid dark-grey-bg">
+			<div class="row">				
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div class="footer-right-col">
+						<!-- Footer Social Icons : starts -->
+						<div class="footer-social-icons text-center">
+							<a class="white" href="www.facebook.html">
+								<span class="ion-social-facebook"></span>
+							</a>
+							<a class="white" href="www.twitter.html">
+								<span class="ion-social-twitter"></span>
+							</a>
+							<a class="white" href="www.googleplus.html">
+								<span class="ion-social-googleplus"></span>
+							</a>
+						</div>
+						<!-- Footer Social Icons : ends -->
+						<div class="footer-text-content text-center">
+							<p class="white">&copy; Mytrip Travel Agency </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- To Top -->
+			<div class="to-top white-bg">
+				<a class="scroll dark" href="#master-wrap"><i class="ion-ios-arrow-thin-up"></i></a>
+			</div>
+		</section>
+		<!-- Footer : ends -->
+
+	</section>
+    <!-- Master Wrap : ends -->
+    <!-- Google Map API -->
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+      <script src="{{asset('js/template.js')}}"></script>
+</body>
+</html>
