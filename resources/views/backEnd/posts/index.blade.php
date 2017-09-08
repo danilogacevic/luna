@@ -10,19 +10,19 @@ Post
         <table class="table table-bordered table-striped table-hover" id="tblposts">
             <thead>
                 <tr>
-                    <th>ID</th><th>Title</th><th>Body</th><th>Short Desc</th><th>Category</th><th>Actions</th>
+                    <th>ID</th><th>Title</th><th>Body</th><th>Short Desc</th><th>Photo</th><th>Category</th><th>Actions</th>
                 </tr>
             </thead>
             <tbody>
             @foreach($posts as $item)
                 <tr>
                     <td>{{ $item->id }}</td>
-                    <td><a href="{{ url('posts', $item->id) }}">{{ $item->title }}</a></td><td>{{ $item->body }}</td><td>{{ $item->short_desc }}</td><td>{{ $item->category()->cat_title }}</td>
+                    <td><a href="{{ route('posts.edit',$item->id) }}">{{ $item->title }}</a></td><td>{!! $value =  str_limit($item->body, 100, '...');!!}</td><td>{!! $value =  str_limit($item->short_desc, 20, '...');!!}</td><td><img src="{{$item->photo ? $item->photo->file : 'http://placehold.it/400x400'}}" alt="" height="50" width="50"></td><td>{{ $item->categorie->cat_title }}</td>
                     <td>
-                        <a href="{{ url('posts/' . $item->id . '/edit') }}" class="btn btn-primary btn-xs">Update</a> 
+                        <a href="{{ route('posts.edit',$item->id) }}" class="btn btn-primary btn-xs">Update</a> 
                         {!! Form::open([
                             'method'=>'DELETE',
-                            'url' => ['posts', $item->id],
+                            'action' => ['PostsController@destroy', $item->id],
                             'style' => 'display:inline'
                         ]) !!}
                             {!! Form::submit('Delete', ['class' => 'btn btn-danger btn-xs']) !!}

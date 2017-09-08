@@ -6,9 +6,11 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use App\Post;
+use App\Photo;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
 use Session;
+use Illuminate\Support\Facades\Validator;
 
 use App\Categorie;
 
@@ -22,7 +24,7 @@ class PostsController extends Controller
      */
     public function index()
     {
-        $posts = Post::all();
+        $posts = Post::orderBy('id','desc')->get();
 
         return view('backEnd.posts.index', compact('posts'));
     }
@@ -45,13 +47,45 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
-        
-        Post::create($request->all());
+          $this->validate($request, [
+                'title'      => 'required',
+                // 'body'       => 'required',
+                'short_desc' => 'required',
+                'photo_id'   => 'required',
+                'categorie_id' => 'required',
+                // 'address'    => 'required',
+                'status' => 'required'
+
+                        ]);
+
+          $input = $request->all();
+
+          if(isset($input['price']) && isset($input['decreased_price'])) {
+
+            $input['saving'] = (($input['price'] - $input['decreased_price'])/$input['price'])*100;
+          }
+
+          
+
+              if($file = $request->file('photo_id')){
+
+                $name = time() . $file->getClientOriginalName();
+
+                $file->move('media',$name);
+
+                $photo = Photo::create(['file'=>$name]);
+
+                $input['photo_id'] = $photo->id;
+            }
+
+        Post::create($input);
 
         Session::flash('message', 'Post added!');
         Session::flash('status', 'success');
 
         return redirect('admin/posts');
+
+
     }
 
     /**
@@ -77,9 +111,15 @@ class PostsController extends Controller
      */
     public function edit($id)
     {
+       
+
+        
+
         $post = Post::findOrFail($id);
 
-        return view('backEnd.posts.edit', compact('post'));
+        $categories = Categorie::pluck('cat_title','id')->all();
+
+        return view('backEnd.posts.edit', compact('post','categories'));
     }
 
     /**
@@ -91,14 +131,38 @@ class PostsController extends Controller
      */
     public function update($id, Request $request)
     {
-        
-        $post = Post::findOrFail($id);
-        $post->update($request->all());
+        $input = $request->all();
+
+        if(isset($input['price']) && isset($input['decreased_price'])) {
+
+            $input['saving'] = (($input['price'] - $input['decreased_price'])/$input['price'])*100;
+          }
+
+
+
+        if($file = $request->file('photo_id')){
+
+
+            $name = time() . $file->getClientOriginalName();
+
+
+            $file->move('media', $name);
+
+            $photo = Photo::create(['file'=>$name]);
+
+
+            $input['photo_id'] = $photo->id;
+
+
+        }
+
+        Post::findOrFail($id)->update($input);
+      
 
         Session::flash('message', 'Post updated!');
         Session::flash('status', 'success');
 
-        return redirect('posts');
+        return redirect('admin/posts');
     }
 
     /**
@@ -117,7 +181,7 @@ class PostsController extends Controller
         Session::flash('message', 'Post deleted!');
         Session::flash('status', 'success');
 
-        return redirect('posts');
+        return redirect('admin/posts');
     }
 
 }

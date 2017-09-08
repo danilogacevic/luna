@@ -29,8 +29,13 @@ Route::get('/single-tour', 'HomeController@single_tour')->name('single-tour');
 Route::get('/admin',function (){
 
 	return view('backlayout.app');
-});
+})->middleware('admin');
 
 // Route::resource('/admin/users','AdminUsersController');
 Route::resource('/admin/posts','PostsController');
 Route::resource('/admin/categories','CategoriesController');
+Route::resource('/admin/media','PhotosController');
+
+Route::post('/contactUs','HomeController@sendEmail');
+
+Route::get('/single-tour/{id}','HomeController@single_tour');

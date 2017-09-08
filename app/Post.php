@@ -20,14 +20,19 @@ class Post extends Model
      *
      * @var array
      */
-    protected $fillable = ['title','body','short_desc','cat_id','status','price','decreased_price','saving'];
+    protected $fillable = ['title','body','photo_id','short_desc','categorie_id','address','transport','whats_included','status','price','decreased_price','saving'];
 
     // use SoftDeletes;
     // protected $dates = ['deleted_at'];
 
-    public function category(){
+    public function categorie(){
 
         return $this->belongsTo('App\Categorie');
+    }
+
+    public function photo(){
+
+        return $this->belongsTo('App\Photo');
     }
 
 }

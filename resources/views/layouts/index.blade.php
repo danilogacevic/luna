@@ -1,74 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>MyTrip Travel Agency</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Travel Company">
-    <meta name="author" content="Hitesh Jariwla">
-    <!-- Standard Favicon-->
-    <link rel="shortcut icon" href="{{asset('images/favicon.ico')}}">   
-    
-	<link rel="stylesheet" href="{{asset('css/template.css')}}">    
-   
+@include('includes.header')
 
-    <!-- Google Web Fonts-->        
-	<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
-	<!-- Google Fonts End -->
-
-
-</head>
-<body>
-    <!-- Preloader -->
-    <div id="preloader">
-        <div id="status">
-        </div>
-    </div>
-    <!-- Header : starts -->
-    <header class="header-wrapper">
-		<!-- Logo -->
-		<div class="logo-wrap float-left">
-			<div class="vertical-align">
-				<a href="#">
-					<img class="logo text-left" src="images/logo.png" alt="logo">
-				</a>
-			</div>
-		</div>		
-		<!-- Menu Section : starts -->
-		<nav id="baseImage" class="menu-container main-home-menu float-left">
-			<ul class="menu">
-				<li class="main-menu-item"><a class="scroll" href="#home">Home</a></li>
-				<li class="main-menu-item"><a class="scroll" href="#about">About</a></li>
-                <li class="main-menu-item"><a class="scroll" href="#services">Services</a></li>
-				<li class="main-menu-item"><a class="scroll" href="#packages">Packages</a></li>
-				<li class="main-menu-item"><a class="scroll" href="#gallery">Gallery</a></li>
-				<li class="main-menu-item"><a class="scroll" href="#deals">Hot Deals</a></li>				
-				<li class="main-menu-item"><a class="scroll" href="#blog">Blog</a></li>
-				<li class="main-menu-item"><a class="scroll" href="#contact">Contact</a></li>
-			</ul>
-		</nav>
-		<!-- Menu Section : ends -->
-		<!-- Header Content Block : starts -->
-		<div class="header-content-block float-left">
-			<div class="vertical-align">
-				<div class="social-icons text-right">
-					<ul>
-						<li><a href="#"><i class="ion-social-facebook"></i></a></li>
-						<li><a href="#"><i class="ion-social-twitter"></i></a></li>
-						<li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-					</ul>
-				</div>
-				<!-- Mobile Menu Trigger -->
-				<div class="mobile-nav-container text-right">
-					<div class="mobile-nav">
-						<span></span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Header Content Block : ends -->
-	</header>
-    <!-- Header : ends -->
     <!-- Master Wrap : starts -->
     <section id="master-wrap" class="master-wrap">
 		<!-- Home : starts -->
@@ -78,15 +9,15 @@
 				<!-- Item01 -->
 				<div class="item full-height">
 					<!-- Background Image Source -->
-					<img src="images/slide1.jpg" class="hidden bg-image" alt="hidden_img" data-no-retina>
+					<img src="images/slide4.jpg" class="hidden bg-image" alt="hidden_img" data-no-retina>
 					<!-- Animate Content Block : starts -->
 					<div class="cd-intro full-height">
 						<div class="mask cd-intro-content vertical-align text-center">
-							<h2 class="white"><span>Trendy Designs</span></h2>
+							<h2 class="white"><span>Atraktivne lokacije</span></h2>
 							<div class="action-wrapper">
 								<div class="action-block">
 									<p class="white">
-										Smart and detailed designs keep us one step ahead
+										sa širokom mrežom naših partnera
 									</p>
 								</div>
 							</div>
@@ -97,15 +28,15 @@
 				<!-- Item02 -->
 				<div class="item full-height">
 					<!-- Background Image Source -->
-					<img src="images/slide2.jpg" class="hidden bg-image" alt="hidden_img" data-no-retina>
+					<img src="images/slide1.jpg" class="hidden bg-image" alt="hidden_img" data-no-retina>
 					<!-- Animate Content Block : starts -->
 					<div class="cd-intro full-height">
 						<div class="cd-intro-content mask vertical-align text-center">
-							<h2 class="white"><span>Simple and Minimal</span></h2>
+							<h2 class="white"><span>Najpovoljnije avio karte</span></h2>
 							<div class="action-wrapper">
 								<div class="action-block">
 									<p class="white">
-										Easy to use templates from our experienced team
+										u najkraćem roku Vam nalazimo najpovoljniju kartu za željenu destinaciju
 									</p>
 								</div>
 							</div>
@@ -116,15 +47,15 @@
 				<!-- Item03 -->
 				<div class="item full-height">
 					<!-- Background Image Source -->
-					<img src="images/slide3.jpg" class="hidden bg-image" alt="hidden_img" data-no-retina>
+					<img src="{{asset('images/slide3.jpg')}}" class="hidden bg-image" alt="hidden_img" data-no-retina>
 					<!-- Animate Content Block : starts -->
 					<div class="cd-intro full-height">
 						<div class="cd-intro-content mask vertical-align text-center">
-							<h2 class="white"><span>Futuristic Designs</span></h2>
+							<h2 class="white"><span>Rent a car</span></h2>
 							<div class="action-wrapper">
 								<div class="action-block">
 									<p class="white">
-										Just the number of users shows the strength
+										vozila različitih klasa, da odgovore na Vaše zahtjeve 
 									</p>
 								</div>
 							</div>
@@ -139,32 +70,43 @@
 				<!-- Container : starts-->
 				<div class="container">
                     <div class="row">
-                        <div class="col-md-4 col-sm-4 wow slideInLeft">
-                            <div class="item tours">	
-							   <img src="Images/tour/tour_img1.jpg" alt="Tour Image">
-							   <div class="tour-detail">
-                               <div class="tour-title">								
-								    <h4>Paris Family Tour</h4>
-								</div>
-								<div class="row">								
-									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-										<div class="ed_stardiv">
-											<div class="star-rating"><span style="width:80%;"></span></div>
+
+                    @foreach($posts as $post)
+
+                    	@if($post->categorie->cat_title == 'ekskluzivno')
+	                        <div class="col-md-4 col-sm-4 wow slideInLeft">
+	                            <div class="item tours">	
+								   <img src="{{$post->photo->file}}" alt="Tour Image">
+								   <div class="tour-detail">
+	                               <div class="tour-title">								
+									    <h4>{{$post->title}}</h4>
+									</div>
+									<div class="row">								
+										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+											<div class="ed_stardiv">
+												<div class="star-rating"><span style="width:80%;"></span></div>
+											</div>
 										</div>
-									</div>
-									<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-										<span class="price">$45</span>
-									</div>
-									</div>																		
-								<p>
-								Lorem Ipsum Hotel is situated 5 minutes walk from London's Zoological Gardens and a metro station in tree.
-								</p>
-								</div>								
-						    </div>
-                        </div>
+										<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+											<span class="price">${{$post->price}}</span>
+										</div>
+										</div>	
+
+
+									<p>
+									{{$post->short_desc}}
+									</p>
+									</div>								
+							    </div>
+	                        </div>
+                        @endif
+
+                        @endforeach
+
+                        
 						<div class="col-md-4 col-sm-4 wow fadeIn">
                             <div class="item tours">	
-							   <img src="Images/tour/tour_img2.jpg" alt="Tour Image">
+							   <img src="{{asset('images/post1.jpg')}}" alt="Tour Image">
 							   <div class="tour-detail">
                                <div class="tour-title">								
 								    <h4>Maldives Tour</h4>
@@ -227,7 +169,7 @@
 										<span class="ion-ios-paper-outline"></span>
 									</div>
 									<div class="page-title-wrap">
-										<h2 class="page-title light-white">About Us</h2>
+										<h2 class="page-title light-white">o nama</h2>
 										<p class="page-sub-title light-white">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
 									</div>
 								</div>
@@ -246,11 +188,9 @@
 					<div class="row">
 						<div class="col-md-8">
 							<div class="wow slideInLeft">
-								<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+								<h2>Sa vama već deset godina</h2>
+								<p>Agencija Luna travel je osnovana   u Baru. U okviru ove agencije, od prošle godine posluje in luna interanitional, koja se nalazi u Podgorici. Od početka našeg poslovanja, prepoznati smo kao ozbiljan i odgovoran tim, spreman da u svakom trenutku odgovori na zahtjeve klijenata kvalitetnom i najpovoljnijom ponudom. Kroz godine uspješnog poslovanja, stvarajući mrežu partnera sa najprestinžnijih svjetskih destinacija, postajemo jedna od vodećih turističkih agencija u Crnoj Gori i regionu.</p>
+                                <p>Na samom početku poslovanja našu ponudu sastojala se od aranžmana za ____________________            . Uspješnim poslovanjem i velikim brojem zadovoljnih klijenata, našu ponudu smo obogatili aranžmanima za _____________. Veliki broj zadovoljnih klijenata nas je ustanovio kao brand nespornog ugleda i profesionalizma. Njihov broj je u stalnom porastu, dajući nam motiv i obavezu da nastavimo rad sa istim entuzijazmom i posvećenošću.</p>
 							</div>
 						</div>
                         <div class="col-md-4">
@@ -265,28 +205,32 @@
                     <div class="row">
                     <div class="col-md-4 col-sm-4">
                         <div class="item element-content wow slideInLeft">									
-						    <h4>Vision</h4>
+						    <h4>Misija</h4>
 							    <p>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-									in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+									Posjeta najprestižnijih turističkih destinacija postaje ostvariva za veliki broj ljudi. Putovanja i uspomene koje nose, predstavljaju neprocjenjivo bogatstvo koje ne blijedi. Povoljnom i raznovrsnom ponudom nastojimo da Vas obogatimo uspomenama na živopisne predjele egzotičnih lokacija.
 								    </p>
 								</div>
                         </div>
                     <div class="col-md-4 col-sm-4">
                         <div class="item element-content wow fadeIn">									
-						    <h4>Mission</h4>
+						    <h4>Mogućnosti</h4>
 							    <p>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-									in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+									Raznovrsan asortiman turističkih usluga koji čine:<br>
+									<i class="fa fa-circle-thin" aria-hidden="true"></i> Rezervacije najpovoljnijih avio karata za sve svjetske destinacije<br>
+									<i class="fa fa-circle-thin" aria-hidden="true"></i> Rezervacije smještaja u svim svjetskim hotelima
+									<br>
+									<i class="fa fa-circle-thin" aria-hidden="true"></i> Rent-a-car usluge
+									<br>
+									<i class="fa fa-circle-thin" aria-hidden="true"></i> Poslovna putovanja <br>
+
 								    </p>
 								</div>
                         </div>
                     <div class="col-md-4 col-sm-4">
                         <div class="item element-content wow slideInRight">									
-						    <h4>Strengths & Values</h4>
+						    <h4>Vrijednosti</h4>
 							    <p>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-									in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+									Članica smo udruženja avio prevoznika - IATA, što nam omogućuje pristup najsavremenijem sistemu prodaje avio karata najvećeg broja svjetskih avio kompanija. Osposobljen kadar za rad na sistemu će u najkraćem roku pronaći najjeftinije avio karte po upitu koji odgovara Vašem zahtjevu.
 								    </p>
 								</div>
                         </div>
@@ -311,7 +255,7 @@
 										<span class="ion-ios-cog-outline light-white"></span>
 									</div>
 									<div class="page-title-wrap">
-										<h2 class="page-title light-white">Services</h2>
+										<h2 class="page-title light-white">usluge</h2>
 										<p class="page-sub-title light-white">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
 									</div>
 								</div>
@@ -333,9 +277,9 @@
 							<!-- Services Item01 -->
 							<a href="#" class="services-content-block light-color blue-bg">
 								<i class="services-content-icon ion-android-train white"></i>
-								<h5 class="services-content-head white">Rail Booking</h5>
+								<h5 class="services-content-head white">rent a car</h5>
 								<p class="services-content-text white">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+									Iznajmite automobil u nasoj agenciji. Na raspolaganju imate Renault Clio automatic, Renault Megane manual, Renault Fluence automatic, Mercedes S class long.
 								</p>
 							</a>
 
@@ -351,9 +295,9 @@
 							<!-- Services Item03 -->
 							<a href="#" class="services-content-block dark-color white light-black-bg">
 								<i class="services-content-icon ion-android-plane white"></i>
-								<h5 class="services-content-head white">Flight Booking</h5>
+								<h5 class="services-content-head white">Avio karte</h5>
 								<p class="services-content-text white">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+									Turistička agencija Luna international d.o.o. je od 2008. godine punopravni član međunarodnog udruženja avio prevoznika IATA-e. U najkraćem roku možete kupiti avion karte po najpovoljnim cijenama.
 								</p>
 							</a>
 
@@ -387,7 +331,7 @@
 										<span class="ion-ios-people-outline white"></span>
 									</div>
 									<div class="page-title-wrap">
-										<h2 class="page-title white">Tour Packages</h2>
+										<h2 class="page-title white">aranzmani</h2>
 										<p class="page-sub-title white">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
 									</div>
 								</div>
@@ -403,23 +347,31 @@
 				<!-- Container : starts -->
 				<div class="container">
 					<div class="row">        	
-            <div class="col-lg-12 col-md-12">     
+            <div class="col-lg-12 col-md-12">   
+
+            @foreach($posts as $post)  
+
+            @if($post->categorie->cat_title === 'ture')
+
     			<div class="strip_all_tour_list wow fadeIn animated" data-wow-delay="0.1s">
                    <div class="row">
                 	<div class="col-lg-4 col-md-4 col-sm-4">                        
-                    	<div class="img_list"><a href="{{route('single-tour')}}"><div class="ribbon popular"></div><img src="images/tour/tour_img4.jpg" alt="">
+                    	<div class="img_list"><a href="single-tour/{{$post->id}}"><div class="ribbon popular"></div><img src="{{$post->photo->file}}" alt="">
                         </a>
                         </div>
                     </div>
                      <div class="clearfix visible-xs-block"></div>
                     <div class="col-lg-6 col-md-6 col-sm-6">
-                    		<div class="tour_list_desc">
-                    		<h3><strong>Arch Triomphe</strong> tour</h3>
+
+
+                    	
+	                       <div class="tour_list_desc" style="position: relative;">
+                    		<h3><strong>{{$post->title}}</strong></h3>
                             <div class="ed_stardiv">
 								<div class="star-rating"><span style="width:80%;"></span></div>
 							</div>
-                            <p>Lorem ipsum dolor sit amet, quem convenire interesset ut vix, ad dicat sanctus detracto vis. Eos modus dolorum ex, qui adipisci maiestatis inciderint no, eos in elit dicat.....</p>
-                            <ul class="add_info">
+                            <p>{{$post->short_desc}}</p>
+                            <ul class="add_info" id="bar"> 
                             <li>
                             <div class="tooltip_styled tooltip-effect-4">
                             	<span class="tooltip-item"><i class="ion-ios-time-outline"></i></span>
@@ -430,301 +382,101 @@
                                 </div>
                               </div>
                            </li>
+
+                           @if($post->address != NULL)
+
                            <li>
                             <div class="tooltip_styled tooltip-effect-4">
                             	<span class="tooltip-item"><i class="ion-ios-location-outline"></i></span>
                                 	<div class="tooltip-content"><h4>Address</h4>
-                                    	Musee du Louvre, 75058 Paris - France
+                                    	{{$post->address}}
                                 </div>
                               </div>
                            </li> 
-                              <li>
+
+                           @endif
+                              <!-- <li>
                             <div class="tooltip_styled tooltip-effect-4">
                             	<span class="tooltip-item"><i class="ion-ios-volume-high"></i></span>
                                 	<div class="tooltip-content"><h4>Languages</h4>
                                     	English - French - Chinese - Russian - Italian
                                 </div>
                               </div>
-                           </li>                                                         
-                           <li>
+                           </li>  -->                                                        
+                         
+							
+							@if($post->transport != NULL)
+
+							<li>
                             <div class="tooltip_styled tooltip-effect-4">
                             	<span class="tooltip-item"><i class="ion-android-train"></i></span>
                                 	<div class="tooltip-content"><h4>Transport</h4>
                                     	<strong>Metro: </strong>Musee du Louvre station (line 1)<br>
-                                        <strong>Bus:</strong> 21, 24, 27, 39, 48, 68, 69, 72, 81, 95<br>
+                                        <strong>Bus:</strong> {{$post->transport}}<br>
                                 </div>
-                              </div>
-                           </li>
+                            </div>
+                            </li>
+
+                            @endif
+
+                           
                             </ul>
                             </div>
+                        
+
+                        
+
+
                     </div>
 					<div class="col-lg-2 col-md-2 col-sm-2">
-                    	<div class="price_list"><div><sup>$</sup>39<span class="normal_price_list">$99</span><small>Per person</small>
-                        <p><a href="single_tour.html" class="btn_1">Details</a></p>
-                        </div>
+
+					@if($post->price != NULL && $post->decreased_price !=NULL)
+
+					<div class="price_list"> <div> @if($post->decreased_price != NULL) <sup>$</sup>{{$post->
+
+			decreased_price}} @endif <span class="normal_price_list">${{$post->price}}</span><small>Per person</small>
+
+                        <p><a href="single-tour/{{$post->id}}" class="btn_1" >Details</a></p>
+
+                        					</div>
                        
-                        </div>
+                    </div>
+
+                    @elseif($post->price != NULL && $post->decreased_price == NULL)
+
+                    	<div class="price_list"> <div><sup>$</sup>{{$post->price}} 
+
+                        <p><a href="single-tour/{{$post->id}}" class="btn_1" >Details</a></p>
+
+                        					</div>
+                       
+                    </div>
+
+					@else
+
+					<div class="price_list"> 
+
+                        <p><a href="single-tour/{{$post->id}}" class="btn_1" style="margin: 60% 20% 0%;">Details</a></p>
+
+                        					</div>
+
+
+					@endif
+                    	
                     </div>
                     </div>
 				</div><!--End strip -->
 
-                <div class="strip_all_tour_list wow fadeIn animated" data-wow-delay="0.1s">
-                   <div class="row">
-                	<div class="col-lg-4 col-md-4 col-sm-4">                        
-                    	<div class="img_list"><a href="single_tour.html"><div class="ribbon popular"></div><img src="images/tour/tour_img5.jpg" alt="">
-                        </a>
-                        </div>
-                    </div>
-                     <div class="clearfix visible-xs-block"></div>
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                    		<div class="tour_list_desc">
-                    		<h3><strong>Notredame</strong> tour</h3>
-                            <div class="ed_stardiv">
-								<div class="star-rating"><span style="width:80%;"></span></div>
-							</div>
-                            <div class="clearfix visible-xs-block"></div>
-                            <p>Lorem ipsum dolor sit amet, quem convenire interesset ut vix, ad dicat sanctus detracto vis. Eos modus dolorum ex, qui adipisci maiestatis inciderint no, eos in elit dicat.....</p>
-                            <ul class="add_info">
-                            <li>
-                            <div class="tooltip_styled tooltip-effect-4">
-                            	<span class="tooltip-item"><i class="ion-ios-time-outline"></i></span>
-                                	<div class="tooltip-content"><h4>Schedule</h4>
-                                    	<strong>Monday to Friday</strong> 09.00 AM - 5.30 PM<br>
-                                        <strong>Saturday</strong> 09.00 AM - 5.30 PM<br>
-                                        <strong>Sunday</strong> <span class="label label-danger">Closed</span>
-                                </div>
-                              </div>
-                           </li>
-                           <li>
-                            <div class="tooltip_styled tooltip-effect-4">
-                            	<span class="tooltip-item"><i class="ion-ios-location-outline"></i></span>
-                                	<div class="tooltip-content"><h4>Address</h4>
-                                    	Musee du Louvre, 75058 Paris - France
-                                </div>
-                              </div>
-                           </li> 
-                              <li>
-                            <div class="tooltip_styled tooltip-effect-4">
-                            	<span class="tooltip-item"><i class="ion-ios-volume-high"></i></span>
-                                	<div class="tooltip-content"><h4>Languages</h4>
-                                    	English - French - Chinese - Russian - Italian
-                                </div>
-                              </div>
-                           </li>                                                         
-                           <li>
-                            <div class="tooltip_styled tooltip-effect-4">
-                            	<span class="tooltip-item"><i class="ion-android-train"></i></span>
-                                	<div class="tooltip-content"><h4>Transport</h4>
-                                    	<strong>Metro: </strong>Musee du Louvre station (line 1)<br>
-                                        <strong>Bus:</strong> 21, 24, 27, 39, 48, 68, 69, 72, 81, 95<br>
-                                </div>
-                              </div>
-                           </li>
-                            </ul>
-                            </div>
-                    </div>
-					<div class="col-lg-2 col-md-2 col-sm-2">
-                    	<div class="price_list"><div><sup>$</sup>42*<span class="normal_price_list">$99</span><small>*Per person</small>
-                        <p><a href="single_tour.html" class="btn_1">Details</a></p>
-                        </div>
-                       
-                        </div>
-                    </div>
-                    </div>
-				</div><!--End strip -->
+				@endif
+				@endforeach
 
-                <div class="strip_all_tour_list wow fadeIn animated" data-wow-delay="0.1s">
-                   <div class="row">
-                	<div class="col-lg-4 col-md-4 col-sm-4">                        
-                    	<div class="img_list"><a href="single_tour.html"><div class="ribbon top_rated"></div><img src="images/tour/tour_img6.jpg" alt="">
-                        </a>
-                        </div>
-                    </div>
-                     <div class="clearfix visible-xs-block"></div>
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                    		<div class="tour_list_desc">
-                    		<h3><strong>Versailles</strong> tour</h3>
-                            <div class="ed_stardiv">
-								<div class="star-rating"><span style="width:80%;"></span></div>
-							</div>
-                            <p>Lorem ipsum dolor sit amet, quem convenire interesset ut vix, ad dicat sanctus detracto vis. Eos modus dolorum ex, qui adipisci maiestatis inciderint no, eos in elit dicat.....</p>
-                            <ul class="add_info">
-                            <li>
-                            <div class="tooltip_styled tooltip-effect-4">
-                            	<span class="tooltip-item"><i class="ion-ios-time-outline"></i></span>
-                                	<div class="tooltip-content"><h4>Schedule</h4>
-                                    	<strong>Monday to Friday</strong> 09.00 AM - 5.30 PM<br>
-                                        <strong>Saturday</strong> 09.00 AM - 5.30 PM<br>
-                                        <strong>Sunday</strong> <span class="label label-danger">Closed</span>
-                                </div>
-                              </div>
-                           </li>
-                           <li>
-                            <div class="tooltip_styled tooltip-effect-4">
-                            	<span class="tooltip-item"><i class="ion-ios-location-outline"></i></span>
-                                	<div class="tooltip-content"><h4>Address</h4>
-                                    	Musee du Louvre, 75058 Paris - France<br>
-                                </div>
-                              </div>
-                           </li> 
-                              <li>
-                            <div class="tooltip_styled tooltip-effect-4">
-                            	<span class="tooltip-item"><i class="ion-ios-volume-high"></i></span>
-                                	<div class="tooltip-content"><h4>Languages</h4>
-                                    	English - French - Chinese - Russian - Italian
-                                </div>
-                              </div>
-                           </li>                                                         
-                           <li>
-                            <div class="tooltip_styled tooltip-effect-4">
-                            	<span class="tooltip-item"><i class="ion-android-train"></i></span>
-                                	<div class="tooltip-content"><h4>Transport</h4>
-                                    	<strong>Metro: </strong>Musee du Louvre station (line 1)<br>
-                                        <strong>Bus:</strong> 21, 24, 27, 39, 48, 68, 69, 72, 81, 95<br>
-                                </div>
-                              </div>
-                           </li>
-                            </ul>
-                            </div>
-                    </div>
-					<div class="col-lg-2 col-md-2 col-sm-2">
-                    	<div class="price_list"><div><sup>$</sup>39*<span class="normal_price_list">$99</span><small>*Per person</small>
-                        <p><a href="single_tour.html" class="btn_1">Details</a></p>
-                        </div>
-                       
-                        </div>
-                    </div>
-                    </div>
-				</div><!--End strip -->
+                
 
-                <div class="strip_all_tour_list wow fadeIn animated" data-wow-delay="0.1s">
-                   <div class="row">
-                	<div class="col-lg-4 col-md-4 col-sm-4">                        
-                    	<div class="img_list"><a href="single_tour.html"><div class="ribbon popular"></div><img src="images/tour/tour_img7.jpg" alt="">
-                        </a>
-                        </div>
-                    </div>
-                     <div class="clearfix visible-xs-block"></div>
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                    		<div class="tour_list_desc">
-                    		<h3><strong>Arch Triomphe</strong> tour</h3>
-                            <div class="ed_stardiv">
-								<div class="star-rating"><span style="width:80%;"></span></div>
-							</div>
-                            <p>Lorem ipsum dolor sit amet, quem convenire interesset ut vix, ad dicat sanctus detracto vis. Eos modus dolorum ex, qui adipisci maiestatis inciderint no, eos in elit dicat.....</p>
-                            <ul class="add_info">
-                            <li>
-                            <div class="tooltip_styled tooltip-effect-4">
-                            	<span class="tooltip-item"><i class="ion-ios-time-outline"></i></span>
-                                	<div class="tooltip-content"><h4>Schedule</h4>
-                                    	<strong>Monday to Friday</strong> 09.00 AM - 5.30 PM<br>
-                                        <strong>Saturday</strong> 09.00 AM - 5.30 PM<br>
-                                        <strong>Sunday</strong> <span class="label label-danger">Closed</span>
-                                </div>
-                              </div>
-                           </li>
-                           <li>
-                            <div class="tooltip_styled tooltip-effect-4">
-                            	<span class="tooltip-item"><i class="ion-ios-location-outline"></i></span>
-                                	<div class="tooltip-content"><h4>Address</h4>
-                                    	Musee du Louvre, 75058 Paris - France<br>
-                                </div>
-                              </div>
-                           </li> 
-                              <li>
-                            <div class="tooltip_styled tooltip-effect-4">
-                            	<span class="tooltip-item"><i class="ion-ios-volume-high"></i></span>
-                                	<div class="tooltip-content"><h4>Languages</h4>
-                                    	English - French - Chinese - Russian - Italian
-                                </div>
-                              </div>
-                           </li>                                                         
-                           <li>
-                            <div class="tooltip_styled tooltip-effect-4">
-                            	<span class="tooltip-item"><i class="ion-android-train"></i></span>
-                                	<div class="tooltip-content"><h4>Transport</h4>
-                                    	<strong>Metro: </strong>Musee du Louvre station (line 1)<br>
-                                        <strong>Bus:</strong> 21, 24, 27, 39, 48, 68, 69, 72, 81, 95<br>
-                                </div>
-                              </div>
-                           </li>
-                            </ul>
-                            </div>
-                    </div>
-					<div class="col-lg-2 col-md-2 col-sm-2">
-                    	<div class="price_list"><div><sup>$</sup>39*<span class="normal_price_list">$99</span><small>*Per person</small>
-                        <p><a href="single_tour.html" class="btn_1">Details</a></p>
-                        </div>
-                       
-                        </div>
-                    </div>
-                    </div>
-				</div><!--End strip -->
+               
 
-                <div class="strip_all_tour_list wow fadeIn animated" data-wow-delay="0.1s">
-                   <div class="row">
-                	<div class="col-lg-4 col-md-4 col-sm-4">                        
-                    	<div class="img_list"><a href="single_tour.html"><div class="ribbon top_rated"></div><img src="images/tour/tour_img8.jpg" alt="">
-                        </a>
-                        </div>
-                    </div>
-                     <div class="clearfix visible-xs-block"></div>
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                    		<div class="tour_list_desc">
-                    		<h3><strong>Pompidue</strong> tour</h3>
-                            <div class="ed_stardiv">
-								<div class="star-rating"><span style="width:80%;"></span></div>
-							</div>
-                            <p>Lorem ipsum dolor sit amet, quem convenire interesset ut vix, ad dicat sanctus detracto vis. Eos modus dolorum ex, qui adipisci maiestatis inciderint no, eos in elit dicat.....</p>
-                            <ul class="add_info">
-                            <li>
-                            <div class="tooltip_styled tooltip-effect-4">
-                            	<span class="tooltip-item"><i class="ion-ios-time-outline"></i></span>
-                                	<div class="tooltip-content"><h4>Schedule</h4>
-                                    	<strong>Monday to Friday</strong> 09.00 AM - 5.30 PM<br>
-                                        <strong>Saturday</strong> 09.00 AM - 5.30 PM<br>
-                                        <strong>Sunday</strong> <span class="label label-danger">Closed</span>
-                                </div>
-                              </div>
-                           </li>
-                           <li>
-                            <div class="tooltip_styled tooltip-effect-4">
-                            	<span class="tooltip-item"><i class="ion-ios-location-outline"></i></span>
-                                	<div class="tooltip-content"><h4>Address</h4>
-                                    	Musee du Louvre, 75058 Paris - France<br>
-                                </div>
-                              </div>
-                           </li> 
-                              <li>
-                            <div class="tooltip_styled tooltip-effect-4">
-                            	<span class="tooltip-item"><i class="ion-ios-volume-high"></i></span>
-                                	<div class="tooltip-content"><h4>Languages</h4>
-                                    	English - French - Chinese - Russian - Italian
-                                </div>
-                              </div>
-                           </li>                                                         
-                           <li>
-                            <div class="tooltip_styled tooltip-effect-4">
-                            	<span class="tooltip-item"><i class="ion-android-train"></i></span>
-                                	<div class="tooltip-content"><h4>Transport</h4>
-                                    	<strong>Metro: </strong>Musee du Louvre station (line 1)<br>
-                                        <strong>Bus:</strong> 21, 24, 27, 39, 48, 68, 69, 72, 81, 95<br>
-                                </div>
-                              </div>
-                           </li>
-                            </ul>
-                            </div>
-                    </div>
-					<div class="col-lg-2 col-md-2 col-sm-2">
-                    	<div class="price_list"><div><sup>$</sup>79*<span class="normal_price_list">$99</span><small>*Per person</small>
-                        <p><a href="single_tour.html" class="btn_1">Details</a></p>
-                        </div>
-                       
-                        </div>
-                    </div>
-                    </div>
-				</div><!--End strip -->
+               
 
+              
                 <div class="strip_all_tour_list wow fadeIn animated" data-wow-delay="0.1s">
                    <div class="row">
                 	<div class="col-lg-4 col-md-4 col-sm-4">                        
@@ -814,7 +566,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="testimonial-title">
-							<h2 class="light-black">Customer Reviews</h2>
+							<h2 class="light-black">komentari klijenata</h2>
 						</div>
 					</div>
 				</div>
@@ -903,7 +655,7 @@
 										<span class="ion-ios-camera-outline white"></span>
 									</div>
 									<div class="page-title-wrap">
-										<h2 class="page-title white">Gallery</h2>
+										<h2 class="page-title white">Galerija</h2>
 										<p class="page-sub-title white">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
 									</div>
 								</div>
@@ -930,10 +682,13 @@
 				<!-- Gallery Navigation : ends -->
 				<!-- Gallery Grid : starts -->
 				<div id="grid" class="grid shuffle gutter-grid text-center directional-hover wow-container" data-col-no="5" data-gutter="0px">
+
+				
+				@foreach($photos as $photo)
 					<!-- Gallery Item-01 -->
 					<div class="shuf-item sizer image-lightbox dh-container" data-groups='["all","category-3"]'>
-						<a href="images/gallery/1.jpg" class="image-selector">
-							<img src="images/gallery/1.jpg" class="img-responsive delayed-animation wow slideInUp" alt="portfolio_image" data-wow-offset="150" data-no-retina>
+						<a href="{{$photo->file}}" class="image-selector">
+							<img src="{{$photo->file}}" class="img-responsive delayed-animation wow slideInUp" alt="portfolio_image" data-wow-offset="150" data-no-retina>
 							<div class="dh-overlay">
 								<div class="overlay-icon">
 									<span class="white ion-image"></span>
@@ -945,145 +700,11 @@
 							</div>
 						</a>
 					</div>
-					<!-- Gallery Item-02 -->
-					<div class="shuf-item sizer image-lightbox dh-container" data-groups='["all","category-2","category-4"]'>
-						<a href="images/gallery/2.jpg">
-							<img src="images/gallery/2.jpg" class="img-responsive delayed-animation wow slideInUp" alt="portfolio_image" data-wow-offset="150" data-no-retina>
-							<div class="dh-overlay">
-								<div class="overlay-icon">
-									<span class="white ion-image"></span>
-								</div>
-								<div class="overlay-text">
-									<h4 class="white">Lorem ipsum dolor</h4>
-									<p class="white">consectetur adipisicing elit </p>
-								</div>
-							</div>
-						</a>
-					</div>
-					<!-- Gallery Item-03 -->
-					<div class="shuf-item sizer image-lightbox dh-container" data-groups='["all","category-1,category-5"]'>
-						<a href="images/gallery/3.jpg" class="image-selector">
-							<img src="images/gallery/3.jpg" class="img-responsive delayed-animation wow slideInUp" alt="portfolio_image" data-wow-offset="150" data-no-retina>
-							<div class="dh-overlay">
-								<div class="overlay-icon">
-									<span class="white ion-image"></span>
-								</div>
-								<div class="overlay-text">
-									<h4 class="white">Lorem ipsum dolor</h4>
-									<p class="white">consectetur adipisicing elit </p>
-								</div>
-							</div>
-						</a>
-					</div>
-					<!-- Gallery Item-04 -->
-					<div class="shuf-item sizer image-lightbox dh-container" data-groups='["all","category-3","category-2","category-1"]'>
-						<a href="images/gallery/4.jpg" class="image-selector">
-							<img src="images/gallery/4.jpg" class="img-responsive delayed-animation wow slideInUp" alt="portfolio_image" data-wow-offset="150" data-no-retina>
-							<div class="dh-overlay">
-								<div class="overlay-icon">
-									<span class="white ion-images"></span>
-								</div>
-								<div class="overlay-text">
-									<h4 class="white">Lorem ipsum dolor</h4>
-									<p class="white">consectetur adipisicing elit </p>
-								</div>
-							</div>
-						</a>
-						<a href="images/gallery/2.jpg" class="image-selector hidden" data-no-retina></a>
-						<a href="images/gallery/3.jpg" class="image-selector hidden" data-no-retina></a>
-					</div>
-					<!-- Gallery Item-05 -->
-					<div class="shuf-item sizer image-lightbox dh-container" data-groups='["all","category-5"]'>
-						<a href="images/gallery/5.jpg" class="image-selector">
-							<img src="images/gallery/5.jpg" class="img-responsive delayed-animation wow slideInUp" alt="portfolio_image" data-wow-offset="150"  data-no-retina>
-							<div class="dh-overlay">
-								<div class="overlay-icon">
-									<span class="white ion-image"></span>
-								</div>
-								<div class="overlay-text">
-									<h4 class="white">Lorem ipsum dolor</h4>
-									<p class="white">consectetur adipisicing elit </p>
-								</div>
-							</div>
-						</a>
-					</div>
-					<!-- Gallery Item-06 -->
-					<div class="shuf-item sizer image-lightbox dh-container" data-groups='["all","category-1","category-4"]'>
-						<a href="images/gallery/6.jpg" class="image-selector">
-							<img src="images/gallery/6.jpg" class="img-responsive delayed-animation wow slideInUp" alt="portfolio_image" data-wow-offset="150" data-no-retina>
-							<div class="dh-overlay">
-								<div class="overlay-icon">
-									<span class="white ion-image"></span>
-								</div>
-								<div class="overlay-text">
-									<h4 class="white">Lorem ipsum dolor</h4>
-									<p class="white">consectetur adipisicing elit </p>
-								</div>
-							</div>
-						</a>
-					</div>
-					<!-- Gallery Item-07 -->
-					<div class="shuf-item sizer image-lightbox dh-container" data-groups='["all","category-3"]'>
-						<a href="images/gallery/7.jpg" class="image-selector">
-							<img src="images/gallery/7.jpg" class="img-responsive delayed-animation wow slideInUp" alt="portfolio_image" data-wow-offset="150" data-no-retina>
-							<div class="dh-overlay">
-								<div class="overlay-icon">
-									<span class="white ion-images"></span>
-								</div>
-								<div class="overlay-text">
-									<h4 class="white">Lorem ipsum dolor</h4>
-									<p class="white">consectetur adipisicing elit </p>
-								</div>
-							</div>
-						</a>
-						<a href="images/gallery/8.jpg" class="image-selector hidden" data-no-retina></a>
-						<a href="images/gallery/9.jpg" class="image-selector hidden" data-no-retina></a>
-					</div>
-					<!-- Portfolio Item-08-->
-					<div class="shuf-item sizer image-lightbox dh-container" data-groups='["all","category-1,"category-4""]'>
-						<a href="images/gallery/8.jpg" class="image-selector">
-							<img src="images/gallery/8.jpg" class="img-responsive delayed-animation wow slideInUp" alt="portfolio_image" data-wow-offset="150" data-no-retina>
-							<div class="dh-overlay">
-								<div class="overlay-icon">
-									<span class="white ion-image"></span>
-								</div>
-								<div class="overlay-text">
-									<h4 class="white">Lorem ipsum dolor</h4>
-									<p class="white">consectetur adipisicing elit </p>
-								</div>
-							</div>
-						</a>
-					</div>
-					<!-- Gallery Item-09-->
-					<div class="shuf-item sizer image-lightbox dh-container" data-groups='["all","category-5"]'>
-						<a href="images/gallery/9.jpg" class="image-selector">
-							<img src="images/gallery/9.jpg" class="img-responsive delayed-animation wow slideInUp" alt="portfolio_image" data-wow-offset="150" data-no-retina>
-							<div class="dh-overlay">
-								<div class="overlay-icon">
-									<span class="white ion-image"></span>
-								</div>
-								<div class="overlay-text">
-									<h4 class="white">Lorem ipsum dolor</h4>
-									<p class="white">consectetur adipisicing elit </p>
-								</div>
-							</div>
-						</a>
-					</div>
-					<!-- Gallery Item-10-->
-					<div class="shuf-item sizer image-lightbox dh-container" data-groups='["all","category-1"]'>
-						<a href="images/gallery/10.jpg">
-							<img src="images/gallery/10.jpg" class="img-responsive delayed-animation wow slideInUp" alt="portfolio_image" data-wow-offset="150" data-no-retina>
-							<div class="dh-overlay">
-								<div class="overlay-icon">
-									<span class="white ion-image"></span>
-								</div>
-								<div class="overlay-text">
-									<h4 class="white">Lorem ipsum dolor</h4>
-									<p class="white">consectetur adipisicing elit </p>
-								</div>
-							</div>
-						</a>
-					</div>
+				@endforeach
+
+
+				
+					
 				</div>
 				<!-- Gallery Grid : ends -->
 			</div>
@@ -1142,7 +763,7 @@
 										<span class="ion-ios-compose-outline white"></span>
 									</div>
 									<div class="page-title-wrap">
-										<h2 class="page-title white">Hot Deals</h2>
+										<h2 class="page-title white">rent a car</h2>
 										<p class="page-sub-title white">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
 									</div>
 								</div>
@@ -1158,23 +779,34 @@
 				<!-- Container : starts -->
 				<div class="container">      
                 <div class="main_title">
-            <h2>Hot <span>Deals</span></h2>
+            <h2>rent a <span>car</span></h2>
             <p>Quisque at tortor a libero posuere laoreet vitae sed arcu. Curabitur consequat.</p>
         </div>              
-					<div class="row">        
-                            <div class="col-md-4 col-sm-6 wow zoomIn animated" data-wow-delay="0.1s">
-                <div class="tour_container">
-                    <div class="img_container">
-                        <a href="single_tour.html">
-                        <img src="images/tour/tour_img1.jpg" class="img-responsive" alt="">
-                        <div class="ribbon top_rated"></div>
-                        <div class="short_info">
-                            <span class="price"><sup>$</sup>39</span>
-                        </div>
-                        </a>
-                    </div>
+					<div class="row">     
+
+			@foreach($posts as $post)
+
+				@if($post->categorie->cat_title === 'rent a car')
+
+                <div class="col-md-4 col-sm-6 wow zoomIn animated" data-wow-delay="0.1s">
+
+	                <div class="tour_container">
+		                    <div class="img_container">
+		                        <a href="javascript:void(0);">
+		                        <img src="{{$post->photo->file}}" class="img-responsive" alt="">
+		                        <div class="ribbon {{$post->status}}"></div>
+		                        
+		                        @if($post->save)
+		                        <div class="badge_save">Save<strong>{{$post->saving}}</strong></div>
+		                        @endif
+
+		                        <div class="short_info">
+		                            <span class="price"><sup>$</sup>{{$post->price}}</span>
+		                        </div>
+		                        </a>
+		                    </div>
                     <div class="tour_title">
-                        <h3><strong>Arc Triomphe</strong> tour</h3>
+                        <h3><strong>{{$post->title}}</strong></h3>
                        <div class="ed_stardiv">
 								<div class="star-rating"><span style="width:80%;"></span></div>
 							</div><!-- end rating -->                                
@@ -1182,6 +814,10 @@
                     </div>
                 </div><!-- End box tour -->
             </div><!-- End col-md-4 -->
+
+            @endif
+
+            @endforeach
             
             <div class="col-md-4 col-sm-6 wow zoomIn animated" data-wow-delay="0.2s">
                 <div class="tour_container">
@@ -1480,7 +1116,7 @@
 										<span class="ion-ios-paperplane-outline white"></span>
 									</div>
 									<div class="page-title-wrap">
-										<h2 class="page-title white">Contact</h2>
+										<h2 class="page-title white">kontakt</h2>
 										<p class="page-sub-title white">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
 									</div>
 								</div>
@@ -1510,7 +1146,9 @@
 								</div>
 							</div>
 							<!-- Map Block -->
-							<div id="map-container" class="map-container light-grey-bg"></div>
+							
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d309.4789595409738!2d19.26133780366728!3d42.44312962659832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134deb490a96345d%3A0x69a69a13363bd6b!2zSGVyY2Vnb3ZhxI1rYSwgUG9kZ29yaWNhLCDQptGA0L3QsCDQk9C-0YDQsA!5e0!3m2!1ssr!2s!4v1502697860003" width="100%" height="330px" frameborder="0" style="border:0" allowfullscreen></iframe>
+							
 						</div>
 						<div class="col-md-6 col-sm-5 col-xs-5 no-padding">
 							<!-- Contact Block : starts -->
@@ -1518,14 +1156,16 @@
 								<div class="vertical-align">
 									<!-- Contact Form : starts -->
 									<div class="contact-form text-left">
-										<form id="contactform" name="myform" action="sendmail.php" enctype="multipart/form-data" method="post">
+										
+								{!! Form::open(['method'=>'POST','action' => 'HomeController@sendEmail','id'=>'contactform','files'=>true]) !!}
+
 											<input class="white" type="text" id="name" placeholder="Name" name="name" data-placeholder="Name">
 											<input class="white" type="text" id="email" placeholder="Email" name="email" data-placeholder="Email">											
-											<textarea class="white" rows="4" id="message" name="message" placeholder="Message" data-placeholder="Message"></textarea>
+											<textarea class="white" rows="4" id="message" name="body" placeholder="Message" data-placeholder="Message"></textarea>
 											<div class="button-style-01-container add-min-top-half">
 												<button type="submit" name="submit" id="submit" class="button-style-01 white-button light-black">Send Now</button>
 											</div>
-										</form>
+								</form>
 									</div>
 									<!-- Contact Form : ends -->
 								</div>
@@ -1551,45 +1191,5 @@
 			<!-- Contact Content : ends -->
 		</section>
 		<!-- Contact : ends -->
-		<!-- Footer : starts -->
-		<div id="footer" class="footer container-fluid dark-grey-bg">
-			<div class="row">				
-				<div class="col-md-12 col-sm-12 col-xs-12">
-					<div class="footer-right-col">
-						<!-- Footer Social Icons : starts -->
-						<div class="footer-social-icons text-center">
-							<a class="white" href="www.facebook.html">
-								<span class="ion-social-facebook"></span>
-							</a>
-							<a class="white" href="www.twitter.html">
-								<span class="ion-social-twitter"></span>
-							</a>
-							<a class="white" href="www.googleplus.html">
-								<span class="ion-social-googleplus"></span>
-							</a>
-						</div>
-						<!-- Footer Social Icons : ends -->
-						<div class="footer-text-content text-center">
-							<p class="white">&copy; Mytrip Travel Agency </p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- To Top -->
-			<div class="to-top white-bg">
-				<a class="scroll dark" href="#master-wrap"><i class="ion-ios-arrow-thin-up"></i></a>
-			</div>
-		</div>
-		<!-- Footer : ends -->
-	</section>
-    <!-- Master Wrap : ends -->
-    
-  
-    <!-- Google Map API -->
-    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-
-      <script src="{{asset('js/template.js')}}"></script>
-   
-    
-</body>
-</html>
+		
+		@include('includes/footer')

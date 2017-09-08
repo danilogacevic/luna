@@ -17413,7 +17413,7 @@ li.has-dropdown:hover > .dropdown{
 /*--------------------------------------------------------------------------------*/
 
 #about .bg{
-	background: url('../images/bg/about-bg.jpg') center center no-repeat;
+	background: url('../images/bg/about-bg1.jpg') center center no-repeat;
 	background-size: cover;
 }
 
@@ -17635,7 +17635,7 @@ li.has-dropdown:hover > .dropdown{
 /*--------------------------------------------------------------------------------*/
 
 #services .bg{
-	background: url('../images/bg/service-bg.jpg') center center no-repeat;
+	background: url('../images/bg/about-bg1.jpg') center center no-repeat;
 	background-size: cover;
 	position: relative;
 }
@@ -17903,7 +17903,7 @@ li.has-dropdown:hover > .dropdown{
 /*--------------------------------------------------------------------------------*/
 
 #packages .bg{
-	background: url('../images/bg/package-bg.jpg') center center no-repeat;
+	background: url('../images/bg/about-bg1.jpg') center center no-repeat;
 	background-size: cover;
 	position: relative;
 }
@@ -18585,7 +18585,7 @@ ul.add_info li i {
 /*--------------------------------------------------------------------------------*/
 
 #gallery .bg{
-	background: url('../images/bg/gallery-bg.jpg') center center no-repeat;
+	background: url('../images/bg/about-bg1.jpg') center center no-repeat;
 	background-size: cover;
 	position: relative;
 }
@@ -18667,7 +18667,7 @@ ul.add_info li i {
 /*--------------------------------------------------------------------------------*/
 
 .blog-content{
-	background: url('../images/bg/package-bg.jpg') center center no-repeat;
+	background: url('../images/bg/about-bg1.jpg') center center no-repeat;
 	background-size: cover;
 }
 
@@ -18814,7 +18814,7 @@ ul.add_info li i {
 /*--------------------------------------------------------------------------------*/
 
 #contact .bg{
-	background: url('../images/bg/contact-bg.jpg') center center no-repeat;
+	background: url('../images/bg/about-bg1.jpg') center center no-repeat;
 	background-size: cover;
 }
 
@@ -19166,16 +19166,19 @@ ul.add_info li i {
 	letter-spacing: 3px;
 	text-transform: uppercase;
 	font-weight: 700;
+  margin-left: 27%;
+      color: cornflowerblue; /* promijenio naslov na single tour i makao klasu white */
 }
 
 .inner-page-header .page-sub-title{
 	font-style: italic;
 	font-size: 16px;
 	line-height: 23px;
+  margin-left: 29%;
 }
 
 .standard-blog-post{
-	background: url('../images/bg/package-bg.jpg') center center no-repeat;
+	background: url('../images/bg/post3.jpg') center center no-repeat;
 	background-size: cover;
 	position: relative;
 }
@@ -19194,6 +19197,9 @@ ul.list_ok {
     margin: 0 0 20px;
     padding: 0;
     line-height: 22px;
+    columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
 }
 ul.list_ok li {
     position: relative;

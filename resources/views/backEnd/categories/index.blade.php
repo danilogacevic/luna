@@ -19,7 +19,7 @@ Category
                     <td>{{ $item->id }}</td>
                     <td><a href="{{ url('categories', $item->id) }}">{{ $item->cat_title }}</a></td>
                     <td>
-                        <a href="{{ url('categories/' . $item->id . '/edit') }}" class="btn btn-primary btn-xs">Update</a> 
+                        <a href="{{ route('categories.edit',$item->id)}}" class="btn btn-primary btn-xs">Update</a> 
                         {!! Form::open([
                             'method'=>'DELETE',
                             'url' => ['admin/categories', $item->id],

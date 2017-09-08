@@ -10,7 +10,7 @@ Edit Category
 
     {!! Form::model($category, [
         'method' => 'PATCH',
-        'url' => ['categories', $category->id],
+        'action' => ['CategoriesController@update', $category->id],
         'class' => 'form-horizontal'
     ]) !!}
 

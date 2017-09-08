@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <!-- <meta charset="utf-8"> -->
     <title>MyTrip Travel Agency</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Travel Company">
-    <meta name="author" content="Hitesh Jariwla">
+    
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="user-scalable = yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Turistička agenicija Luna international pruža kompletan asortiman turističkih usluga, od rezervacije hotela, prodaje najeftinijih avio karata do usluga rent a car - a ">
+	<meta name="keywords" content="avio karte, turistički aranžmani, turističke agencije crna gora">
+
    <!-- Standard Favicon-->
     <link rel="shortcut icon" href="{{asset('images/favicon.ico')}}">   
     
@@ -37,12 +42,12 @@
 			<ul class="menu">
 				<li class="main-menu-item"><a class="scroll" href="/#home">Home</a></li>
 				<li class="main-menu-item"><a class="scroll" href="/#about">About</a></li>
-                <li class="main-menu-item"><a class="scroll" href="index.html#services">Services</a></li>
-				<li class="main-menu-item"><a class="scroll" href="index.html#packages">Packages</a></li>
-				<li class="main-menu-item"><a class="scroll" href="index.html#gallery">Gallery</a></li>
-				<li class="main-menu-item"><a class="scroll" href="index.html#deals">Hot Deals</a></li>				
-				<li class="main-menu-item"><a class="scroll" href="index.html#blog">Blog</a></li>				
-				<li class="main-menu-item"><a class="scroll" href="index.html#contact">Contact</a></li>
+                <li class="main-menu-item"><a class="scroll" href="/#services">Services</a></li>
+				<li class="main-menu-item"><a class="scroll" href="/#packages">Packages</a></li>
+				<li class="main-menu-item"><a class="scroll" href="/#gallery">Gallery</a></li>
+				<li class="main-menu-item"><a class="scroll" href="/#deals">Hot Deals</a></li>				
+				<li class="main-menu-item"><a class="scroll" href="/#blog">Blog</a></li>				
+				<li class="main-menu-item"><a class="scroll" href="/#contact">Contact</a></li>
 			</ul>
 		</nav>
 		<!-- Menu Section : ends -->
@@ -77,7 +82,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
-							<h1 class="page-title white">Arch Triomphe tour</h1>
+							<h1 class="page-title ">{{$post->title}}</h1>
 							<p class="page-sub-title white">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
 						</div>
 					</div>
@@ -109,48 +114,26 @@
 				<div class="row">
 					<div class="col-md-8 col-sm-8">						
 						<div class="row">
-							<div class="col-md-12">								
-								<p class="add-min-top-quarter dark-grey">
-								<b>Day 1 </b>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-								</p>
-								<p class="add-min-top-quarter dark-grey">
-								<b>Day 2 </b>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-								</p>
-                                <p class="add-min-top-quarter dark-grey">
-								<b>Day 3 </b>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-								</p>
-                                <p class="add-min-top-quarter dark-grey">
-								<b>Day 4 </b>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-								</p>
-                                <p class="add-min-top-quarter dark-grey">
-								<b>Day 5 </b>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-								</p>
-                                <p class="add-min-top-quarter dark-grey">
-								<b>Day 6 </b>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-								</p>                               
+							<div class="col-md-12" id="raspored">								
+								{!!$post->body!!}                              
                                 <h4>What's include</h4>
                                 <p>
 						            Lorem ipsum dolor sit amet, at omnes deseruisse pri. Quo aeterno legimus insolens ad. Sit cu detraxit constituam, an mel iudico constituto efficiendi.
 					            </p>
                                 <div class="row">
-						<div class="col-md-6 col-sm-6">
+						<div class="col-md-8 col-sm-8">
 							<ul class="list_ok">
-								<li>Lorem ipsum dolor sit amet</li>
-								<li>No scripta electram necessitatibus sit</li>
-								<li>Quidam percipitur instructior an eum</li>
-								<li>Ut est saepe munere ceteros</li>
-								<li>No scripta electram necessitatibus sit</li>
-								<li>Quidam percipitur instructior an eum</li>
+								{!!$post->whats_included!!}
 							</ul>
 						</div>
-						<div class="col-md-6 col-sm-6">
+						<!-- <div class="col-md-6 col-sm-6">
 							<ul class="list_ok">
 								<li>Lorem ipsum dolor sit amet</li>
 								<li>No scripta electram necessitatibus sit</li>
 								<li>Quidam percipitur instructior an eum</li>
 								<li>No scripta electram necessitatibus sit</li>
 							</ul>
-						</div>
+						</div> -->
 					</div>
 							</div>
 						</div>	
@@ -327,5 +310,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 
       <script src="{{asset('js/template.js')}}"></script>
+
+      @yield('scripts')
 </body>
 </html>

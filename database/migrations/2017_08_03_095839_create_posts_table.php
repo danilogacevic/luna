@@ -16,16 +16,20 @@ class CreatePostsTable extends Migration
             Schema::create('posts', function(Blueprint $table) {
                 $table->increments('id');
                 $table->string('title');
-$table->text('body');
-$table->string('short_desc');
-$table->integer('cat_id');
-$table->string('status');
-$table->float('price');
-$table->float('decreased_price');
-$table->integer('saving');
+                $table->text('body')->nullable();
+                $table->string('short_desc');
+                $table->string('photo_id');
+                $table->integer('categorie_id');
+                $table->string('status');
+                $table->string('address')->nullable();
+                $table->string('transport')->nullable();
+                $table->string('whats_included')->nullable();
+                $table->float('price')->nullable();
+                $table->float('decreased_price')->nullable();
+                $table->float('saving')->nullable();
 
                 $table->timestamps();
-                $table->softDeletes();
+                
             });
             
     }

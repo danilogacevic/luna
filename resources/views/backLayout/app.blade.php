@@ -154,7 +154,7 @@
                         <!-- /.nav-second-level -->
                     </li>
 
-                    <li>
+                   <!--  <li>
                         <a href="#"><i class="fa fa-paypal" aria-hidden="true"></i> Orders<span class="fa arrow"></span></a>
 
                         <ul class="nav nav-second-level">
@@ -164,16 +164,19 @@
 
                           
 
-                        </ul>
+                        </ul> -->
                         <!-- /.nav-second-level -->
-                    </li>
+                    <!-- </li> -->
 
 
                     <li>
                         <a href="#"><i class="fa fa-picture-o fa-fw"></i>Photos<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="">All photos</a>
+                                <a href="{{route('media.index')}}">All photos</a>
+                            </li>
+                            <li>
+                                <a href="{{route('media.create')}}">Upload photos</a>
                             </li>
 
                         </ul>
