@@ -83,7 +83,7 @@
 					<div class="row">
 						<div class="col-md-12">
 							<h1 class="page-title ">{{$post->title}}</h1>
-							<p class="page-sub-title white">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+							<!-- <p class="page-sub-title white">Lorem ipsum dolor sit amet, consectetur adipisicing</p> -->
 						</div>
 					</div>
 				</div>
@@ -95,15 +95,15 @@
 				<div class="row">
 					<div class="col-md-6 col-sm-6">
 						<div class="tour-post-details text-left">
-							<p><a class="inner-page-navigation dark-grey" href="#">6 Days / 5 Nights</a> &nbsp; | &nbsp;</p>
-							<p class="dark-grey">May 04, 2016 &nbsp; | &nbsp;</p>							
+							<p><!-- <a class="inner-page-navigation dark-grey" href="#">6 Days / 5 Nights</a> --> &nbsp; | &nbsp;</p>
+							<p class="dark-grey">{{$post->created_at->format('d-M-y')}} &nbsp; | &nbsp;</p>							
 						</div>
 					</div>
 					<div class="col-md-6 col-sm-6">
 						<div class="tour-post-path text-right">
-							<p><a class="inner-page-navigation dark-grey" href="#">Home</a> /
-							<a class="inner-page-navigation dark-grey" href="#">Tour</a> /
-							<a class="inner-page-navigation dark-grey" href="#">Tour Details</a></p>
+							<p><a class="inner-page-navigation dark-grey" href="#"></a> 
+							<a class="inner-page-navigation dark-grey" href="#"></a> 
+							<a class="inner-page-navigation dark-grey" href="#"></a></p>
 						</div>
 					</div>
 				</div>
@@ -116,9 +116,9 @@
 						<div class="row">
 							<div class="col-md-12" id="raspored">								
 								{!!$post->body!!}                              
-                                <h4>What's include</h4>
+                                <h4>Uključeno je</h4>
                                 <p>
-						            Lorem ipsum dolor sit amet, at omnes deseruisse pri. Quo aeterno legimus insolens ad. Sit cu detraxit constituam, an mel iudico constituto efficiendi.
+						            
 					            </p>
                                 <div class="row">
 						<div class="col-md-8 col-sm-8">

@@ -13,7 +13,7 @@ use App\Categorie;
 
 // vrijeme cu da koristim svudje, pa da bih samo jednom pozivao Carbon
 
-$time=Carbon::now();
+$time=Carbon::now()->format('d-M-Y');
 
 
 class HomeController extends Controller

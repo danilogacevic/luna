@@ -170,7 +170,7 @@
 									</div>
 									<div class="page-title-wrap">
 										<h2 class="page-title light-white">o nama</h2>
-										<p class="page-sub-title light-white">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+										<p class="page-sub-title light-white"></p>
 									</div>
 								</div>
 							</div>
@@ -256,7 +256,7 @@
 									</div>
 									<div class="page-title-wrap">
 										<h2 class="page-title light-white">usluge</h2>
-										<p class="page-sub-title light-white">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+										<p class="page-sub-title light-white"></p>
 									</div>
 								</div>
 							</div>
@@ -332,7 +332,7 @@
 									</div>
 									<div class="page-title-wrap">
 										<h2 class="page-title white">aranzmani</h2>
-										<p class="page-sub-title white">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+										<p class="page-sub-title white"></p>
 									</div>
 								</div>
 							</div>
@@ -656,7 +656,7 @@
 									</div>
 									<div class="page-title-wrap">
 										<h2 class="page-title white">Galerija</h2>
-										<p class="page-sub-title white">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+										<p class="page-sub-title white"></p>
 									</div>
 								</div>
 							</div>
@@ -764,7 +764,7 @@
 									</div>
 									<div class="page-title-wrap">
 										<h2 class="page-title white">rent a car</h2>
-										<p class="page-sub-title white">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+										<p class="page-sub-title white"></p>
 									</div>
 								</div>
 							</div>
@@ -780,7 +780,7 @@
 				<div class="container">      
                 <div class="main_title">
             <h2>rent a <span>car</span></h2>
-            <p>Quisque at tortor a libero posuere laoreet vitae sed arcu. Curabitur consequat.</p>
+            <p>Odaberite vozilo u skladu sa Vašim potrebama.</p>
         </div>              
 					<div class="row">     
 
@@ -1117,7 +1117,7 @@
 									</div>
 									<div class="page-title-wrap">
 										<h2 class="page-title white">kontakt</h2>
-										<p class="page-sub-title white">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+										<p class="page-sub-title white"></p>
 									</div>
 								</div>
 							</div>
