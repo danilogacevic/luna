@@ -25979,6 +25979,11 @@ body {
 		line-height: 47px;
 	}
 
+  .mask.cd-intro-content h2{
+    font-size: 30px;
+    line-height: 37px;
+  }
+
 	.mask.cd-intro-content p {
 		font-size: 16px;
 		line-height: 23px;
