@@ -40,14 +40,14 @@
 		<!-- Menu Section : starts -->
 		<nav id="baseImage" class="menu-container main-home-menu float-left">
 			<ul class="menu">
-				<li class="main-menu-item"><a class="scroll" href="/#home">Home</a></li>
-				<li class="main-menu-item"><a class="scroll" href="/#about">About</a></li>
-                <li class="main-menu-item"><a class="scroll" href="/#services">Services</a></li>
-				<li class="main-menu-item"><a class="scroll" href="/#packages">Packages</a></li>
-				<li class="main-menu-item"><a class="scroll" href="/#gallery">Gallery</a></li>
-				<li class="main-menu-item"><a class="scroll" href="/#deals">Hot Deals</a></li>				
+				<li class="main-menu-item"><a class="scroll" href="/#home">naslovna</a></li>
+				<li class="main-menu-item"><a class="scroll" href="/#about">o nama</a></li>
+                <li class="main-menu-item"><a class="scroll" href="/#services">usluge</a></li>
+				<li class="main-menu-item"><a class="scroll" href="/#packages">aranzmani</a></li>
+				<li class="main-menu-item"><a class="scroll" href="/#gallery">galerija</a></li>
+				<li class="main-menu-item"><a class="scroll" href="/#deals">rent a car</a></li>				
 				<li class="main-menu-item"><a class="scroll" href="/#blog">Blog</a></li>				
-				<li class="main-menu-item"><a class="scroll" href="/#contact">Contact</a></li>
+				<li class="main-menu-item"><a class="scroll" href="/#contact">kontakt</a></li>
 			</ul>
 		</nav>
 		<!-- Menu Section : ends -->
