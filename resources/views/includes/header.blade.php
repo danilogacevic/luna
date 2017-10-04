@@ -21,6 +21,8 @@
 
 
 </head>
+
+@yield('styles')
 <body>
     <!-- Preloader -->
     <div id="preloader">

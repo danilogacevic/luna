@@ -561,84 +561,49 @@
 		<!-- Package : ends -->
 		<!-- Testimonial : starts -->
 		<section id="testimonial" class="testimonial pad-top pad-bottom text-center white-bg">
-			<!-- Container : starts -->
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="testimonial-title">
-							<h2 class="light-black">komentari klijenata</h2>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<!-- Text Block : starts -->
-						<div class="text-block sync-single" data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "arrows": false, "dots": false, "asNavFor": ".sync-multi", "fade": false}'>
-							<!-- Item01 -->
-							<div class="item">
-								<p class="dark-grey">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-									in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-								</p>
-							</div>
-							<!-- Item02 -->
-							<div class="item">
-								<p class="dark-grey">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-									in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-								</p>
-							</div>
-							<!-- Item03 -->
-							<div class="item">
-								<p class="dark-grey">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-									in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-								</p>
-							</div>
-							<!-- Item04 -->
-							<div class="item">
-								<p class="dark-grey">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-									in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-								</p>
-							</div>
-						</div>
-						<!-- Text Block : ends -->
-						<!-- Image Block : starts -->
-						<div class="image-block sync-multi" data-slick='{"slidesToShow": 3, "slidesToScroll": 1, "arrows": false, "dots": true, "asNavFor": ".sync-single", "fade": false, "loop":false, "focusOnSelect": true, "centerMode": true, "centerPadding": 0}' data-mdnumber="1"
-										data-smnumber="1" data-xsnumber="1">
-
-							<!-- Item01 -->
-							<div class="item text-center">
-								<img src="images/testimonial/1.jpg" class="img-responsive" alt="testimonial-image" data-no-retina>
-								<h5 class="light-black">Alexander John</h5>
-								<p class="dark-grey">C.E.O, Port Quest</p>
-							</div>
-							<!-- Item02 -->
-							<div class="item text-center">
-								<img src="images/testimonial/2.jpg" class="img-responsive" alt="testimonial-image" data-no-retina>
-								<h5 class="light-black">Natalia David</h5>
-								<p class="dark-grey">Senior Manager, Milan Tools</p>
-							</div>
-							<!-- Item03 -->
-							<div class="item text-center">
-								<img src="images/testimonial/3.jpg" class="img-responsive" alt="testimonial-image" data-no-retina>
-								<h5 class="light-black">Andrew Mark</h5>
-								<p class="dark-grey">Managing Editor, Media Boom</p>
-							</div>
-							<!-- Item04 -->
-							<div class="item text-center">
-								<img src="images/testimonial/4.jpg" class="img-responsive" alt="testimonial-image" data-no-retina>
-								<h5 class="light-black">Laura Patrik</h5>
-								<p class="dark-grey">President/C.E.O, Digital Aster</p>
-							</div>
-						</div>
-						<!-- Image Block : ends -->
-
-					</div>
-				</div>
-			</div>
-			<!-- Container : ends -->
+			<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:100px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:100px;overflow:hidden;">
+            <div>
+                <img data-u="image" src="img/001.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/002.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/003.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/004.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/009.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/010.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/019.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/020.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/021.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/022.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/024.jpg" />
+            </div>
+            <a data-u="any" href="https://www.jssor.com" style="display:none">image gallery</a>
+        </div>
+    </div>
+    <!-- #endregion Jssor Slider End -->
 		</section>
 		<!-- Testimonial : ends -->
 		<!-- Gallery : starts -->
