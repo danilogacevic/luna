@@ -33,5 +33,6 @@ mix.scripts([
         'resources/assets/js/template/jquery.lavalamp-1.4.js',
         
         
-        'resources/assets/js/template/main.js'
+        'resources/assets/js/template/main.js',
+        'resources/assets/js/jssor/jssor.slider-26.2.0.min.js',
             ], 'public/js/template.js');
