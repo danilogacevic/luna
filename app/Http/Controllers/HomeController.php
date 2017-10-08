@@ -39,19 +39,38 @@ class HomeController extends Controller
     public function index()
     {
 
-        // $categories = Categorie::where('cat_title','=','ekskluzivno')->orWhere('cat_title','=','rent a car')->get();
         
+        $categories = Categorie::with('posts')->get();
+        $data=[];
 
-        $posts = Post::all();
+        foreach ($categories as $category) {
+            # code...
+
+            if ($category->cat_title === 'ture') {
+                # code...
+
+                $data[$category->cat_title]=$category->posts()->paginate(5);
+              
+
+            } else {
+
+                $data[$category->cat_title]=$category->posts;
+            }
+
+            // $category->cat_title === 'ture' ? $data[$category->cat_title]=$category->posts()->paginate(1):$data[$category->cat_title]=$category->posts;
+        }
+
         $photos = Photo::doesntHave('post')->get();
         global $time;
-        return view('index',compact('posts','photos','time'));
+        return view('index',compact('photos','time','data'));
 
-        // foreach ($categories as $category) {
+        // foreach ($aranzmani as $aranzman) {
         //     # code...
 
-        //     echo $category->posts;
+        //     echo $aranzman->title;
         // }
+
+        // return $data['ture'];
 
 
     }

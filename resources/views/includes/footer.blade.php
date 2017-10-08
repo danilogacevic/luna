@@ -33,7 +33,7 @@
     
   
     <!-- Google Map API -->
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjCmNx_J2eG0RxnVFOLIbu4aPAPZo6dMA"></script> -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9Ukq2N3t3obkBOtjCxZFpmiKAGylsfo0"></script>
 
       <script src="{{asset('js/template.js')}}"></script>
 

@@ -137,60 +137,7 @@
 					</div>
 							</div>
 						</div>	
-						<!--Tour-post-Review : starts -->
-						<div id="tour-post-comments" class="tour-post-comments">
-							<div class="row">
-								<div class="col-md-12">
-									<div class="comments">
-										<h4 class="sub-head dark-grey">Reviews</h4>
-										<ul class="commentlists">
-											<!-- Review One -->
-											<li class="comment">
-												<div>
-													<div class="avatarbox">
-														<img src="images/pages/blog-post/comments/1.jpg" class="img-responsive" alt="icon1" data-no-retina>
-													</div>
-													<div class="comment-info">
-														<span class="dark-grey">Michelle Jane &nbsp; | &nbsp;</span>
-														<span class="dark-grey">April 15, 2016</span>														
-													</div>
-													<p class="grey">So, I think this is a good theme and I want to use it for my travel blog. Thank you for the good design and coding. You are awesome guys ;)</p>
-												</div>
-											</li>
-
-											<!-- Comment Two -->
-											<li class="comment">
-												<div>
-													<div class="avatarbox">
-														<img src="images/pages/blog-post/comments/3.jpg" class="img-responsive" alt="icon3" data-no-retina>
-													</div>
-													<div class="comment-info">
-														<span class="dark-grey">Michelle Jane &nbsp; | &nbsp;</span>
-														<span class="dark-grey">April 15, 2016</span>														
-													</div>
-													<p class="grey">So, I think this is a good theme and I want to use it for my travel blog. Thank you for the good design and coding. You are awesome guys ;)</p>
-												</div>
-											</li>
-
-											<!-- Comment Three -->
-											<li class="comment">
-												<div>
-													<div class="avatarbox">
-														<img src="images/pages/blog-post/comments/4.jpg" class="img-responsive" alt="icon3" data-no-retina>
-													</div>
-													<div class="comment-info">
-														<span class="dark-grey">Michelle Jane &nbsp; | &nbsp;</span>
-														<span class="dark-grey">April 15, 2016</span>														
-													</div>
-													<p class="grey">So, I think this is a good theme and I want to use it for my travel blog. Thank you for the good design and coding. You are awesome guys ;)</p>
-												</div>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Tour Post Comments : ends -->
+						
 					</div>
 					<div class="col-md-4 col-sm-4 col-xs-12">
 						<div class="box_style_1 expose">

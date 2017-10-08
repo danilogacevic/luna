@@ -20,6 +20,8 @@
             }
         }
 
+
+
     </style>
 
 @endsection
@@ -73,6 +75,8 @@ jQuery(document).ready(function ($) {
             $(window).bind("orientationchange", ScaleSlider);
             /*#endregion responsive code end*/
         });
+
+       
 
 @endsection
 

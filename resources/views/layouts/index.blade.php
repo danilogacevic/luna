@@ -71,9 +71,9 @@
 				<div class="container">
                     <div class="row">
 
-                    @foreach($posts as $post)
+                    @foreach($data['ekskluzivno'] as $post)
 
-                    	@if($post->categorie->cat_title == 'ekskluzivno')
+                    	
 	                        <div class="col-md-4 col-sm-4 wow slideInLeft">
 	                            <div class="item tours">	
 								   <img src="{{$post->photo->file}}" alt="Tour Image">
@@ -99,7 +99,7 @@
 									</div>								
 							    </div>
 	                        </div>
-                        @endif
+                        
 
                         @endforeach
 
@@ -288,7 +288,7 @@
 								<i class="services-content-icon ion-android-restaurant white"></i>
 								<h5 class="services-content-head white">Hotel Booking</h5>
 								<p class="services-content-text white">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+									Ukoliko imate potrebu za rezervacijom hotelskih soba bilo gdje u svijetu, naša agencija je pravi izbor. U najkraćem roku i pouzdano, dobijate potvrdu o rezervaciji.
 								</p>
 							</a>
 
@@ -349,9 +349,9 @@
 					<div class="row">        	
             <div class="col-lg-12 col-md-12">   
 
-            @foreach($posts as $post)  
+            @foreach($data['ture'] as $post)  
 
-            @if($post->categorie->cat_title === 'ture')
+            
 
     			<div class="strip_all_tour_list wow fadeIn animated" data-wow-delay="0.1s">
                    <div class="row">
@@ -467,7 +467,7 @@
                     </div>
 				</div><!--End strip -->
 
-				@endif
+				
 				@endforeach
 
                 
@@ -540,8 +540,9 @@
                     </div>
                     </div>
 				</div><!--End strip -->
-                <div class="text-center">
-                    <ul class="pagination">
+
+                 <div class="text-center">
+                    <!--<ul class="pagination">
                         <li><a href="#">Prev</a></li>
                         <li class="active"><a href="#">1</a></li>
                         <li><a href="#">2</a></li>
@@ -549,8 +550,12 @@
                         <li><a href="#">4</a></li>
                         <li><a href="#">5</a></li>
                         <li><a href="#">Next</a></li>
-                    </ul>
-                </div><!-- end pagination-->              
+                    </ul>-->
+
+                    {{$data['ture']->render()}} 
+                </div> <!-- end pagination-->       
+
+
         </div><!-- End col lg-9 -->
     </div>
 				</div>
@@ -559,53 +564,7 @@
 			<!-- Package Content : ends -->
 		</section>
 		<!-- Package : ends -->
-		<!-- Testimonial : starts -->
-		<section id="testimonial" class="testimonial pad-top pad-bottom text-center white-bg">
-			<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:100px;overflow:hidden;visibility:hidden;">
-        <!-- Loading Screen -->
-        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
-            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
-        </div>
-        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:100px;overflow:hidden;">
-            <div>
-                <img data-u="image" src="img/001.jpg" />
-            </div>
-            <div>
-                <img data-u="image" src="img/002.jpg" />
-            </div>
-            <div>
-                <img data-u="image" src="img/003.jpg" />
-            </div>
-            <div>
-                <img data-u="image" src="img/004.jpg" />
-            </div>
-            <div>
-                <img data-u="image" src="img/009.jpg" />
-            </div>
-            <div>
-                <img data-u="image" src="img/010.jpg" />
-            </div>
-            <div>
-                <img data-u="image" src="img/019.jpg" />
-            </div>
-            <div>
-                <img data-u="image" src="img/020.jpg" />
-            </div>
-            <div>
-                <img data-u="image" src="img/021.jpg" />
-            </div>
-            <div>
-                <img data-u="image" src="img/022.jpg" />
-            </div>
-            <div>
-                <img data-u="image" src="img/024.jpg" />
-            </div>
-            <a data-u="any" href="https://www.jssor.com" style="display:none">image gallery</a>
-        </div>
-    </div>
-    <!-- #endregion Jssor Slider End -->
-		</section>
-		<!-- Testimonial : ends -->
+		
 		<!-- Gallery : starts -->
 		<section id="gallery" class="nav-highlight white-bg">
 			<!-- Page Title : starts -->
@@ -749,9 +708,9 @@
         </div>              
 					<div class="row">     
 
-			@foreach($posts as $post)
+			@foreach($data['rent a car'] as $post)
 
-				@if($post->categorie->cat_title === 'rent a car')
+				
 
                 <div class="col-md-4 col-sm-6 wow zoomIn animated" data-wow-delay="0.1s">
 
@@ -780,7 +739,7 @@
                 </div><!-- End box tour -->
             </div><!-- End col-md-4 -->
 
-            @endif
+           
 
             @endforeach
             
@@ -892,181 +851,7 @@
 			<!-- deal Content : ends -->
 		</section>
 		<!-- Deals : ends -->
-		<section id="blog" class="blog nav-highlight">
-			<!-- Page Title : starts -->
-			<div class="blog-content container-fluid pad-top-half pad-bottom-half light-white-bg">
-				<div class="page-title-container">
-					<div class="row">
-						<!-- Container : starts -->
-						<div class="container">
-							<div class="row">
-								<div class="col-md-12">
-									<div class="page-title-icon">
-										<span class="ion-ios-compose-outline"></span>
-									</div>
-									<div class="page-title-wrap">
-										<h2 class="page-title white">Blog</h2>
-										<p class="page-sub-title white">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Container : ends -->
-					</div>
-				</div>
-			</div>
-			<!-- Page Title : ends -->
-			<!-- Blog Content : starts -->
-			<div class="pad-top pad-bottom parallax">
-				<!-- Container : starts -->
-				<div class="container latest_news">
-					<div class="row">
-						<div class="col-md-12">
-							<!-- Blog Item01 -->
-							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-								<div class="single_news_item">
-									<div class="img_holder">
-										<img src="images/blog/1.jpg" alt="images" class="img-responsive">
-									</div> <!-- End .img_holder -->
-									<div class="post">
-										<h5>Condimentum oranre scelerisque magna</h5>
-										<div class="post_history">
-											<p class="flt_left">Posted <span>March 2016</span></p>
-											<ul class="flt_right">
-												<li><i class="ion-chatbox"></i> 1</li>
-												<li><i class="ion-android-favorite-outline"></i> 3</li>
-											</ul>
-											<div class="clear_fix"></div>
-										</div> <!-- End .post_history -->
-
-										<p>There are many variations of passages available but the majority have  in the some form... </p>
-										<a href="{{route('blog-post')}}" class="transition3s">Continue Reading</a>
-									</div> <!-- End .post -->
-								</div> <!-- End .single_news_item -->
-							</div>
-							<!-- Blog Item02 -->
-							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-								<div class="single_news_item">
-									<div class="img_holder">
-										<img src="images/blog/2.jpg" alt="images" class="img-responsive">
-									</div> <!-- End .img_holder -->
-									<div class="post">
-										<h5>Condimentum oranre scelerisque magna</h5>
-										<div class="post_history">
-											<p class="flt_left">Posted <span>March 2016</span></p>
-											<ul class="flt_right">
-												<li><i class="ion-chatbox"></i> 5</li>
-												<li><i class="ion-android-favorite-outline"></i> 13</li>
-											</ul>
-											<div class="clear_fix"></div>
-										</div> <!-- End .post_history -->
-
-										<p>There are many variations of passages available but the majority have  in the some form... </p>
-										<a href="blog-post.html" class="transition3s">Continue Reading</a>
-									</div> <!-- End .post -->
-								</div> <!-- End .single_news_item -->
-							</div>
-
-							<!-- Blog Item03 -->
-							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-								<div class="single_news_item">
-									<div class="img_holder">
-										<img src="images/blog/3.jpg" alt="images" class="img-responsive">
-									</div> <!-- End .img_holder -->
-									<div class="post">
-										<h5>Condimentum oranre scelerisque magna</h5>
-										<div class="post_history">
-											<p class="flt_left">Posted <span>March 2016</span></p>
-											<ul class="flt_right">
-												<li><i class="ion-chatbox"></i> 6</li>
-												<li><i class="ion-android-favorite-outline"></i> 25</li>
-											</ul>
-											<div class="clear_fix"></div>
-										</div> <!-- End .post_history -->
-
-										<p>There are many variations of passages available but the majority have  in the some form... </p>
-										<a href="blog-post.html" class="transition3s">Continue Reading</a>
-									</div> <!-- End .post -->
-								</div> <!-- End .single_news_item -->
-							</div>
-
-							<!-- Blog Item04 -->
-							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-								<div class="single_news_item">
-									<div class="img_holder">
-										<img src="images/blog/4.jpg" alt="images" class="img-responsive">
-									</div> <!-- End .img_holder -->
-									<div class="post">
-										<h5>Condimentum oranre scelerisque magna</h5>
-										<div class="post_history">
-											<p class="flt_left">Posted <span>March 2016</span></p>
-											<ul class="flt_right">
-												<li><i class="ion-chatbox"></i> 8</li>
-												<li><i class="ion-android-favorite-outline"></i> 13</li>
-											</ul>
-											<div class="clear_fix"></div>
-										</div> <!-- End .post_history -->
-
-										<p>There are many variations of passages available but the majority have  in the some form... </p>
-										<a href="blog-post.html" class="transition3s">Continue Reading</a>
-									</div> <!-- End .post -->
-								</div> <!-- End .single_news_item -->
-							</div>
-
-							<!-- Blog Item05 -->
-							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-								<div class="single_news_item">
-									<div class="img_holder">
-										<img src="images/blog/5.jpg" alt="images" class="img-responsive">
-									</div> <!-- End .img_holder -->
-									<div class="post">
-										<h5>Condimentum oranre scelerisque magna</h5>
-										<div class="post_history">
-											<p class="flt_left">Posted <span>March 2016</span></p>
-											<ul class="flt_right">
-												<li><i class="ion-chatbox"></i> 6</li>
-												<li><i class="ion-android-favorite-outline"></i> 23</li>
-											</ul>
-											<div class="clear_fix"></div>
-										</div> <!-- End .post_history -->
-
-										<p>There are many variations of passages available but the majority have  in the some form... </p>
-										<a href="blog-post.html" class="transition3s">Continue Reading</a>
-									</div> <!-- End .post -->
-								</div> <!-- End .single_news_item -->
-							</div>
-
-							<!-- Blog Item06 -->
-							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-								<div class="single_news_item">
-									<div class="img_holder">
-										<img src="images/blog/6.jpg" alt="images" class="img-responsive">
-									</div> <!-- End .img_holder -->
-									<div class="post">
-										<h5>Condimentum oranre scelerisque magna</h5>
-										<div class="post_history">
-											<p class="flt_left">Posted <span>March 2016</span></p>
-											<ul class="flt_right">
-												<li><i class="ion-chatbox"></i> 10</li>
-												<li><i class="ion-android-favorite-outline"></i> 23</li>
-											</ul>
-											<div class="clear_fix"></div>
-										</div> <!-- End .post_history -->
-
-										<p>There are many variations of passages available but the majority have  in the some form... </p>
-										<a href="blog-post.html" class="transition3s">Continue Reading</a>
-									</div> <!-- End .post -->
-								</div> <!-- End .single_news_item -->
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- Container : ends -->
-
-			</div>
-			<!-- Blog Content : ends -->
-
-		</section>
+		
 		<!-- Contact : starts -->
 		<section id="contact" class="contact nav-highlight">
 			<!-- Page Title : starts -->
@@ -1112,7 +897,11 @@
 							</div>
 							<!-- Map Block -->
 							
-								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d309.4789595409738!2d19.26133780366728!3d42.44312962659832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134deb490a96345d%3A0x69a69a13363bd6b!2zSGVyY2Vnb3ZhxI1rYSwgUG9kZ29yaWNhLCDQptGA0L3QsCDQk9C-0YDQsA!5e0!3m2!1ssr!2s!4v1502697860003" width="100%" height="330px" frameborder="0" style="border:0" allowfullscreen></iframe>
+									<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d309.4789595409738!2d19.26133780366728!3d42.44312962659832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134deb490a96345d%3A0x69a69a13363bd6b!2zSGVyY2Vnb3ZhxI1rYSwgUG9kZ29yaWNhLCDQptGA0L3QsCDQk9C-0YDQsA!5e0!3m2!1ssr!2s!4v1502697860003"  width="100%" height="334px" frameborder="0" style="border:0" allowfullscreen ></iframe> -->
+								
+								<div id="map-container" class="map-container light-grey-bg"></div>
+
+
 							
 						</div>
 						<div class="col-md-6 col-sm-5 col-xs-5 no-padding">
@@ -1156,5 +945,61 @@
 			<!-- Contact Content : ends -->
 		</section>
 		<!-- Contact : ends -->
+		<!-- Testimonial : starts -->
+		<section id="testimonial" class="testimonial pad-top pad-bottom text-center" style="background-color: #E9E9EB;">
+
+			<div class="row">
+					<div class="col-md-12">
+						<div class="testimonial-title">
+							<h2 class="light-black">naši partneri</h2>
+						</div>
+					</div>
+				</div>
+
+			<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:100px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:100px;overflow:hidden;">
+            <div>
+                <img data-u="image" src="img/001.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/002.jpg" />
+            </div>
+            <div>
+                <a href="" class=""><img data-u="image" src="img/003.jpg" /></a>
+            </div>
+            <div>
+                <img data-u="image" src="img/004.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/009.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/010.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/019.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/020.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/021.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/022.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/024.jpg" />
+            </div>
+            <a data-u="any" href="https://www.jssor.com" style="display:none">image gallery</a>
+        </div>
+    </div>
+    <!-- #endregion Jssor Slider End -->
+		</section>
+		<!-- Testimonial : ends -->
 		
 		@include('includes/footer')

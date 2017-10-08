@@ -48,7 +48,7 @@
 				<li class="main-menu-item"><a class="scroll" href="#packages">aranzmani</a></li>
 				<li class="main-menu-item"><a class="scroll" href="#gallery">galerija</a></li>
 				<li class="main-menu-item"><a class="scroll" href="#deals">rent a car</a></li>				
-				<li class="main-menu-item"><a class="scroll" href="#blog">Blog</a></li>
+				<li class="main-menu-item"><a class="scroll" href="#testimonial">Partneri</a></li>
 				<li class="main-menu-item"><a class="scroll" href="#contact">kontakt</a></li>
 			</ul>
 		</nav>

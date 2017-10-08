@@ -2072,11 +2072,11 @@ jQuery.extend( jQuery.easing,
             // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
             var mapOptions = {
                 // How zoomed in you want the map to start at (always required)
-                zoom: 11,
+                zoom: 9,
                 // Zooming of map during scroll wheel movement is set to false
-                scrollwheel: false,
+                scrollwheel: true,
                 // The latitude and longitude to center the map (always required)
-                center: new google.maps.LatLng(21.167416, 72.8140269), // New York
+                center: new google.maps.LatLng(42.305651, 19.199314), // New York 
 
                 // How you would like to style the map.
                 // This is where you would paste any style found on Snazzy Maps.
@@ -2167,7 +2167,17 @@ jQuery.extend( jQuery.easing,
 
             // Let's also add a marker while we're at it
             var marker = new google.maps.Marker({
-                position: new google.maps.LatLng(51.507351, -0.127758),
+                position: new google.maps.LatLng(42.443124, 19.261461),
+                map: map,
+                title: 'Sparklin!',
+                icon: new google.maps.MarkerImage(
+                    "images/map-pin.png",
+                    new google.maps.Size(50, 50, "px", "px")
+                )
+            });
+
+            var marker2 = new google.maps.Marker({
+                position: new google.maps.LatLng(42.102028, 19.095556),
                 map: map,
                 title: 'Sparklin!',
                 icon: new google.maps.MarkerImage(
