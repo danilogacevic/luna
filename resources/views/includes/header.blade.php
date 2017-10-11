@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>MyTrip Travel Agency</title>
+    <title>Luna travel</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Travel Company">
     <meta name="author" content="Hitesh Jariwla">
