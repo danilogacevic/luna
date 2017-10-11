@@ -2177,7 +2177,7 @@ jQuery.extend( jQuery.easing,
             });
 
             var marker2 = new google.maps.Marker({
-                position: new google.maps.LatLng(42.102028, 19.095556),
+                position: new google.maps.LatLng(42.101269, 19.097079),
                 map: map,
                 title: 'Sparklin!',
                 icon: new google.maps.MarkerImage(
