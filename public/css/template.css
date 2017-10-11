@@ -25730,7 +25730,7 @@ body {
 
 
 /*iPhone Landscape Mode and Mediium Smart Phones*/
-@media (min-width: 415px) and (max-width: 480px) {
+@media (min-width: 400px) and (max-width: 480px) {
   .logo{margin-top:0px;}
   .mobile-nav-container{display:block !important}
   .container {
