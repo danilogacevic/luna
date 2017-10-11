@@ -60,7 +60,7 @@ class HomeController extends Controller
             // $category->cat_title === 'ture' ? $data[$category->cat_title]=$category->posts()->paginate(1):$data[$category->cat_title]=$category->posts;
         }
 
-        $photos = Photo::doesntHave('post')->get();
+        $photos = Photo::all();
         global $time;
         return view('index',compact('photos','time','data'));
 
