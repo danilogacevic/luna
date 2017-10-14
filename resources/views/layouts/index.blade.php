@@ -720,8 +720,8 @@
 		                        <img src="{{$post->photo->file}}" class="img-responsive" alt="">
 		                        <div class="ribbon {{$post->status}}"></div>
 		                        
-		                        @if($post->save)
-		                        <div class="badge_save">Save<strong>{{$post->saving}}</strong></div>
+		                        @if($post->saving)
+		                        <div class="badge_save">Ušteda<strong>{{$post->saving}}%</strong></div>
 		                        @endif
 
 		                        <div class="short_info">
