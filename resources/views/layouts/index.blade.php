@@ -118,7 +118,7 @@
 										</div>
 									</div>
 									<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-										<span class="price">$95</span>
+										<span class="price">€95</span>
 									</div>
 									</div>																		
 								<p>
@@ -141,7 +141,7 @@
 										</div>
 									</div>
 									<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-										<span class="price">$145</span>
+										<span class="price">€145</span>
 									</div>
 									</div>																		
 								<p>
@@ -188,8 +188,8 @@
 					<div class="row">
 						<div class="col-md-8">
 							<div class="wow slideInLeft">
-								<h2>Sa vama već deset godina</h2>
-								<p>Agencija <strong class="">Luna travel</strong> je osnovana   u Baru. U okviru ove agencije, od prošle godine posluje in <strong class="">Luna interanitional</strong>, koja se nalazi u Podgorici. Od početka našeg poslovanja, prepoznati smo kao ozbiljan i odgovoran tim, spreman da u svakom trenutku odgovori na zahtjeve klijenata kvalitetnom i najpovoljnijom ponudom. Kroz godine uspješnog poslovanja, stvarajući mrežu partnera sa najprestinžnijih svjetskih destinacija, postajemo jedna od vodećih turističkih agencija u Crnoj Gori i regionu.</p>
+								<h2>Sa vama već 10 godina</h2>
+								<p>Agencija <strong class="">Luna travel</strong> je osnovana   u Baru. U okviru ove agencije, od prošle godine posluje in <strong class="">Luna international</strong>, koja se nalazi u Podgorici. Od početka našeg poslovanja, prepoznati smo kao ozbiljan i odgovoran tim, spreman da u svakom trenutku odgovori na zahtjeve klijenata kvalitetnom i najpovoljnijom ponudom. Kroz godine uspješnog poslovanja, stvarajući mrežu partnera sa najprestinžnijih svjetskih destinacija, postajemo jedna od vodećih turističkih agencija u Crnoj Gori i regionu.</p>
                                 <p>Na samom početku poslovanja naša ponuda sastojala se od prodaje avio karata i od aranžmana sa hotelskim smještajem za čitav svijet. Uspješnim poslovanjem i velikim brojem zadovoljnih klijenata, našu ponudu smo obogatili prodajom brodskih karata, putnim osiguranjem, poslovnim putovanjima (individualnim), izletima, uslugom rent a car - a i dr. Veliki broj zadovoljnih klijenata nas je ustanovio kao brand nespornog ugleda i profesionalizma. Njihov broj je u stalnom porastu, dajući nam motiv i obavezu da nastavimo rad sa istim entuzijazmom i posvećenošću.</p>
 							</div>
 						</div>
@@ -197,7 +197,7 @@
                         <div class="button-style-01-container wow slideInRight">
 									<img src="images/about-img1.jpg" alt="" />
                                         <div class="arrow-img">
-                                            <img src="Images/according-arrow.png" alt="Arrow">
+                                            <img src="images/according-arrow.png" alt="Arrow">
                                         </div>
 								</div>
                         </div>
@@ -432,9 +432,9 @@
 
 					@if($post->price != NULL && $post->decreased_price !=NULL)
 
-					<div class="price_list"> <div> @if($post->decreased_price != NULL) <sup>$</sup>{{$post->
+					<div class="price_list"> <div> @if($post->decreased_price != NULL) <sup>€</sup>{{$post->
 
-			decreased_price}} @endif <span class="normal_price_list">${{$post->price}}</span><small>Per person</small>
+			decreased_price}} @endif <span class="normal_price_list">€{{$post->price}}</span><small>Per person</small>
 
                         <p><a href="single-tour/{{$post->id}}" class="btn_1" >Details</a></p>
 
@@ -444,7 +444,7 @@
 
                     @elseif($post->price != NULL && $post->decreased_price == NULL)
 
-                    	<div class="price_list"> <div><sup>$</sup>{{$post->price}} 
+                    	<div class="price_list"> <div><sup>€</sup>{{$post->price}} 
 
                         <p><a href="single-tour/{{$post->id}}" class="btn_1" >Details</a></p>
 
@@ -532,7 +532,7 @@
                             </div>
                     </div>
 					<div class="col-lg-2 col-md-2 col-sm-2">
-                    	<div class="price_list"><div><sup>$</sup>65*<span class="normal_price_list">$99</span><small>*Per person</small>
+                    	<div class="price_list"><div><sup>€</sup>65*<span class="normal_price_list">€99</span><small>*Per person</small>
                         <p><a href="single_tour.html" class="btn_1">Details</a></p>
                         </div>
                        
@@ -725,7 +725,7 @@
 		                        @endif
 
 		                        <div class="short_info">
-		                            <span class="price"><sup>$</sup>{{$post->price}}</span>
+		                            <span class="price"><sup>€</sup>{{$post->price}}</span>
 		                        </div>
 		                        </a>
 		                    </div>
@@ -750,7 +750,7 @@
                         <img src="images/tour/tour_img2.jpg" width="800" height="533" class="img-responsive" alt="">
                         <div class="ribbon top_rated"></div>
                         <div class="short_info">
-                            <span class="price"><sup>$</sup>45</span>
+                            <span class="price"><sup>€</sup>45</span>
                         </div>
                         </a>
                     </div>
@@ -771,7 +771,7 @@
                         <div class="ribbon popular"></div>
                         <div class="badge_save">Save<strong>30%</strong></div>
                         <div class="short_info">
-                            <span class="price"><sup>$</sup>48</span>
+                            <span class="price"><sup>€</sup>48</span>
                         </div>
                         </a>
                     </div>
@@ -792,7 +792,7 @@
                         <div class="ribbon popular"></div>
                         <div class="badge_save">Save<strong>20%</strong></div>
                         <div class="short_info">
-                            <span class="price"><sup>$</sup>36</span>
+                            <span class="price"><sup>€</sup>36</span>
                         </div>
                         </a>
                     </div>
@@ -812,7 +812,7 @@
                         <img src="images/tour/tour_img5.jpg" width="800" height="533" class="img-responsive" alt="">
                         <div class="ribbon popular"></div>
                         <div class="short_info">
-                            <span class="price"><sup>$</sup>42</span>
+                            <span class="price"><sup>€</sup>42</span>
                         </div>
                         </a>
                     </div>
@@ -832,7 +832,7 @@
                         <img src="images/tour/tour_img6.jpg" width="800" height="533" class="img-responsive" alt="">
                         <div class="ribbon top_rated"></div>
                         <div class="short_info">
-                            <span class="price"><sup>$</sup>40</span>
+                            <span class="price"><sup>€</sup>40</span>
                         </div>
                         </a>
                     </div>
@@ -892,7 +892,7 @@
 										<p class="light-black"><a href="mailto:admin@yourdomain.com">Email: lunatravel2@gmail.com</a></p>
 										<p class="light-black">Pozovite nas: +382 69023744</p>
 										<p class="light-black">Luna international : Podgorica, Hercegovačka broj 6</p>
-										<p class="light-black"><a href="mailto:admin@yourdomain.com">Email: lunainternational@gmail.com</a></p>
+										<p class="light-black"><a href="mailto:admin@yourdomain.com">Email: lunainternational2@gmail.com</a></p>
 										<p class="light-black">Pozovite nas: +382 67010499</p>
                                         
 									</div>

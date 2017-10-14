@@ -28,12 +28,21 @@
 
 @section('script')
 
-
-
-
-$("#bar").css({top: 195, position:'absolute'});
+var $window = $(window);
+		
+		// Main menu dropdown on hover
+		
+		  if($window.width()>997){
+		  
+		  $("#bar").css({top: 195, position:'absolute'});
 
 console.log($('#bar').position().top);
+		  
+		  }
+
+
+
+
 
 jQuery(document).ready(function ($) {
 
