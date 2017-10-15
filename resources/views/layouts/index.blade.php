@@ -371,7 +371,7 @@
 								<div class="star-rating"><span style="width:80%;"></span></div>
 							</div>
                             <p>{{$post->short_desc}}</p>
-                            <ul class="add_info" id="bar"> 
+                            <ul class="add_info bar"> 
                             <li>
                             <div class="tooltip_styled tooltip-effect-4">
                             	<span class="tooltip-item"><i class="ion-ios-time-outline"></i></span>

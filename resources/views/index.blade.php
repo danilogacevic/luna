@@ -34,9 +34,9 @@ var $window = $(window);
 		
 		  if($window.width()>997){
 		  
-		  $("#bar").css({top: 195, position:'absolute'});
+		  $(".bar").css({top: 195, position:'absolute'});
 
-console.log($('#bar').position().top);
+
 		  
 		  }
 
