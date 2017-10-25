@@ -13,11 +13,11 @@
 					<!-- Animate Content Block : starts -->
 					<div class="cd-intro full-height">
 						<div class="mask cd-intro-content vertical-align text-center">
-							<h2 class="white"><span>Atraktivne lokacije</span></h2>
+							<h2 class="white"><span>Aranžmani</span></h2>
 							<div class="action-wrapper">
 								<div class="action-block">
 									<p class="white">
-										sa širokom mrežom naših partnera
+										aranžmani za sve destinacije svijeta
 									</p>
 								</div>
 							</div>
@@ -51,11 +51,11 @@
 					<!-- Animate Content Block : starts -->
 					<div class="cd-intro full-height">
 						<div class="cd-intro-content mask vertical-align text-center">
-							<h2 class="white"><span>Rent a car</span></h2>
+							<h2 class="white"><span>Hoteli</span></h2>
 							<div class="action-wrapper">
 								<div class="action-block">
 									<p class="white">
-										vozila različitih klasa, da odgovore na Vaše zahtjeve 
+										najbolji i najljepši hoteli za čitav svijet 
 									</p>
 								</div>
 							</div>
@@ -104,6 +104,7 @@
                         @endforeach
 
                         
+<<<<<<< Updated upstream
 						<div class="col-md-4 col-sm-4 wow fadeIn">
                             <div class="item tours">	
 							   <img src="{{asset('images/post1.jpg')}}" alt="Tour Image">
@@ -150,6 +151,10 @@
 								</div>								
 						    </div>
                         </div>                                              
+=======
+					
+					                                             
+>>>>>>> Stashed changes
                     </div>
                 </div>
                 <!-- Container : end-->
@@ -477,6 +482,7 @@
                
 
               
+<<<<<<< Updated upstream
                 <div class="strip_all_tour_list wow fadeIn animated" data-wow-delay="0.1s">
                    <div class="row">
                 	<div class="col-lg-4 col-md-4 col-sm-4">                        
@@ -540,6 +546,9 @@
                     </div>
                     </div>
 				</div><!--End strip -->
+=======
+               
+>>>>>>> Stashed changes
 
                  <div class="text-center">
                     <!--<ul class="pagination">
@@ -743,6 +752,7 @@
 
             @endforeach
             
+<<<<<<< Updated upstream
             <div class="col-md-4 col-sm-6 wow zoomIn animated" data-wow-delay="0.2s">
                 <div class="tour_container">
                     <div class="img_container">
@@ -844,6 +854,13 @@
                     </div>
                 </div><!-- End box tour -->
             </div><!-- End col-md-4 -->            
+=======
+       
+            
+        
+          
+                     
+>>>>>>> Stashed changes
         </div>
 				</div>
 				<!-- Container : ends -->
